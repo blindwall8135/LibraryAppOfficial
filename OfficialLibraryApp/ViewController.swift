@@ -6,10 +6,15 @@
 //  Copyright © 2017 Karolina Groszewska. All rights reserved.
 //
 import UIKit
+import Firebase
+
+var ref:DatabaseReference?
 
 class ViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = Database.database().reference()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

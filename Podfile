@@ -7,4 +7,8 @@ target 'OfficialLibraryApp' do
 pod 'Alamofire', '4.6.0'
 pod 'Firebase/Core'
 pod 'Firebase/Firestore'
+pod 'Firebase/Database'
+pod 'Firebase/Auth'
+pod 'GoogleSignIn'
+pod 'Firebase/Database'
 end
