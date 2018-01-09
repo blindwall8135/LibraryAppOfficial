@@ -18,15 +18,12 @@
 		A315446820050A4D002B1C9C /* autosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315446720050A4D002B1C9C /* autosViewController.swift */; };
 		A315446A20050A6F002B1C9C /* mathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315446920050A6F002B1C9C /* mathViewController.swift */; };
 		A315446C20050A90002B1C9C /* scienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315446B20050A90002B1C9C /* scienceViewController.swift */; };
-		A315446E20050B08002B1C9C /* socScienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315446D20050B08002B1C9C /* socScienceViewController.swift */; };
 		A315447020050B2E002B1C9C /* biographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315446F20050B2E002B1C9C /* biographyViewController.swift */; };
 		A315447220050B58002B1C9C /* collegeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315447120050B58002B1C9C /* collegeViewController.swift */; };
 		A315447420050B7A002B1C9C /* databaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315447320050B7A002B1C9C /* databaseViewController.swift */; };
 		A315447620050BAA002B1C9C /* literatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315447520050BAA002B1C9C /* literatureViewController.swift */; };
-		A315447820050BCC002B1C9C /* researchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315447720050BCC002B1C9C /* researchViewController.swift */; };
 		A315447A20050BF2002B1C9C /* mediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315447920050BF2002B1C9C /* mediaViewController.swift */; };
 		A315447C20050C23002B1C9C /* databaseNewspapersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315447B20050C23002B1C9C /* databaseNewspapersViewController.swift */; };
-		A315447E20050C49002B1C9C /* dataBaselistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315447D20050C49002B1C9C /* dataBaselistViewController.swift */; };
 		A315448020050C70002B1C9C /* eBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315447F20050C70002B1C9C /* eBooksViewController.swift */; };
 		A315448220050CAC002B1C9C /* encyclopediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315448120050CAC002B1C9C /* encyclopediaViewController.swift */; };
 		A315448420050CCB002B1C9C /* galeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315448320050CCB002B1C9C /* galeViewController.swift */; };
@@ -51,15 +48,12 @@
 		A315446720050A4D002B1C9C /* autosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = autosViewController.swift; sourceTree = "<group>"; };
 		A315446920050A6F002B1C9C /* mathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mathViewController.swift; sourceTree = "<group>"; };
 		A315446B20050A90002B1C9C /* scienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scienceViewController.swift; sourceTree = "<group>"; };
-		A315446D20050B08002B1C9C /* socScienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = socScienceViewController.swift; sourceTree = "<group>"; };
 		A315446F20050B2E002B1C9C /* biographyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = biographyViewController.swift; sourceTree = "<group>"; };
 		A315447120050B58002B1C9C /* collegeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collegeViewController.swift; sourceTree = "<group>"; };
 		A315447320050B7A002B1C9C /* databaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = databaseViewController.swift; sourceTree = "<group>"; };
 		A315447520050BAA002B1C9C /* literatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = literatureViewController.swift; sourceTree = "<group>"; };
-		A315447720050BCC002B1C9C /* researchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = researchViewController.swift; sourceTree = "<group>"; };
 		A315447920050BF2002B1C9C /* mediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mediaViewController.swift; sourceTree = "<group>"; };
 		A315447B20050C23002B1C9C /* databaseNewspapersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = databaseNewspapersViewController.swift; sourceTree = "<group>"; };
-		A315447D20050C49002B1C9C /* dataBaselistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataBaselistViewController.swift; sourceTree = "<group>"; };
 		A315447F20050C70002B1C9C /* eBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eBooksViewController.swift; sourceTree = "<group>"; };
 		A315448120050CAC002B1C9C /* encyclopediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = encyclopediaViewController.swift; sourceTree = "<group>"; };
 		A315448320050CCB002B1C9C /* galeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galeViewController.swift; sourceTree = "<group>"; };
@@ -117,15 +111,12 @@
 				A315446720050A4D002B1C9C /* autosViewController.swift */,
 				A315446920050A6F002B1C9C /* mathViewController.swift */,
 				A315446B20050A90002B1C9C /* scienceViewController.swift */,
-				A315446D20050B08002B1C9C /* socScienceViewController.swift */,
 				A315446F20050B2E002B1C9C /* biographyViewController.swift */,
 				A315447120050B58002B1C9C /* collegeViewController.swift */,
 				A315447320050B7A002B1C9C /* databaseViewController.swift */,
 				A315447520050BAA002B1C9C /* literatureViewController.swift */,
-				A315447720050BCC002B1C9C /* researchViewController.swift */,
 				A315447920050BF2002B1C9C /* mediaViewController.swift */,
 				A315447B20050C23002B1C9C /* databaseNewspapersViewController.swift */,
-				A315447D20050C49002B1C9C /* dataBaselistViewController.swift */,
 				A315447F20050C70002B1C9C /* eBooksViewController.swift */,
 				A315448120050CAC002B1C9C /* encyclopediaViewController.swift */,
 				A315448320050CCB002B1C9C /* galeViewController.swift */,
@@ -303,7 +294,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A315447820050BCC002B1C9C /* researchViewController.swift in Sources */,
 				A315447A20050BF2002B1C9C /* mediaViewController.swift in Sources */,
 				A315448220050CAC002B1C9C /* encyclopediaViewController.swift in Sources */,
 				A315447220050B58002B1C9C /* collegeViewController.swift in Sources */,
@@ -312,7 +302,6 @@
 				A315448820050D21002B1C9C /* writingViewController.swift in Sources */,
 				A315446A20050A6F002B1C9C /* mathViewController.swift in Sources */,
 				A315448420050CCB002B1C9C /* galeViewController.swift in Sources */,
-				A315447E20050C49002B1C9C /* dataBaselistViewController.swift in Sources */,
 				A315446620050A29002B1C9C /* socialScienceViewController.swift in Sources */,
 				A315447420050B7A002B1C9C /* databaseViewController.swift in Sources */,
 				A315448620050CFA002B1C9C /* juniorResourcesViewController.swift in Sources */,
@@ -323,7 +312,6 @@
 				A315446C20050A90002B1C9C /* scienceViewController.swift in Sources */,
 				A315446420050A00002B1C9C /* resourcesViewController.swift in Sources */,
 				A315446820050A4D002B1C9C /* autosViewController.swift in Sources */,
-				A315446E20050B08002B1C9C /* socScienceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
