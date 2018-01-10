@@ -18,10 +18,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Biography View Controller-->
         <scene sceneID="X2c-Ad-sC5">
             <objects>
-                <viewController id="0A6-9T-eVk" sceneMemberID="viewController">
+                <viewController id="0A6-9T-eVk" customClass="biographyViewController" customModule="OfficialLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ejU-bN-fXR">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="-2687.5" y="108.984375"/>
         </scene>
-        <!--View Controller-->
+        <!--Database Newspapers View Controller-->
         <scene sceneID="G9I-fn-Z5c">
             <objects>
-                <viewController id="43E-wm-b5H" sceneMemberID="viewController">
+                <viewController id="43E-wm-b5H" customClass="databaseNewspapersViewController" customModule="OfficialLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cpn-ra-l6C">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,38 +74,10 @@
             </objects>
             <point key="canvasLocation" x="-2698.4375" y="812.6953125"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="w7Q-NK-yi9">
-            <objects>
-                <viewController id="dRI-rV-Ddn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="deY-Zc-Whu">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BOOKS" translatesAutoresizingMaskIntoConstraints="NO" id="fXj-Zg-ydd">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome User! You are now in Data baselist." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIy-T5-HRY">
-                                <rect key="frame" x="44" y="89" width="655" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="34"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="bvn-QA-aYi"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M9V-iL-LnS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1959.375" y="877.734375"/>
-        </scene>
-        <!--View Controller-->
+        <!--Books View Controller-->
         <scene sceneID="c6g-Wj-tFl">
             <objects>
-                <viewController id="STa-Hj-BUu" sceneMemberID="viewController">
+                <viewController id="STa-Hj-BUu" customClass="eBooksViewController" customModule="OfficialLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dKN-H1-rCz">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,18 +198,6 @@
                                     <segue destination="43E-wm-b5H" kind="show" id="WH3-Fp-ccQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQe-ce-r0c">
-                                <rect key="frame" x="559" y="257" width="189" height="139"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="24"/>
-                                <state key="normal" title="DATA BASELIST" backgroundImage="BOOKS">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="dRI-rV-Ddn" kind="show" id="NlY-40-adg"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wl1-0y-4c8">
                                 <rect key="frame" x="0.0" y="443" width="189" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -310,32 +270,8 @@
                                     <segue destination="HDQ-3l-DQP" kind="show" id="Oym-4a-9dK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGA-CE-Ra8">
-                                <rect key="frame" x="189" y="633" width="189" height="139"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="34"/>
-                                <state key="normal" title="RESEARCH" backgroundImage="BOOKS">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="SUN-dl-zrH" kind="show" id="mPw-fs-gLh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEm-mV-Hxc">
-                                <rect key="frame" x="290" y="812" width="189" height="139"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="23"/>
-                                <state key="normal" title="SOCIAL SCIENCE" backgroundImage="BOOKS">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="EIG-eB-4Xy" kind="show" id="LR4-M9-zPg"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHb-5l-Cl9">
-                                <rect key="frame" x="40" y="812" width="189" height="139"/>
+                                <rect key="frame" x="189" y="630" width="189" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="35"/>
@@ -366,7 +302,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMf-ag-exS">
-                                <rect key="frame" x="540" y="812" width="189" height="139"/>
+                                <rect key="frame" x="573" y="257" width="189" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="27"/>
@@ -387,10 +323,10 @@
             </objects>
             <point key="canvasLocation" x="633.59375" y="133.0078125"/>
         </scene>
-        <!--View Controller-->
+        <!--Literature View Controller-->
         <scene sceneID="Csq-FP-lfI">
             <objects>
-                <viewController id="dGa-2M-vdZ" sceneMemberID="viewController">
+                <viewController id="dGa-2M-vdZ" customClass="literatureViewController" customModule="OfficialLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gw7-iJ-8ZP">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -422,38 +358,10 @@
             </objects>
             <point key="canvasLocation" x="1369.53125" y="132.421875"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="VqN-3D-0Zm">
-            <objects>
-                <viewController id="SUN-dl-zrH" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="t79-TQ-Pf2">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BOOKS" translatesAutoresizingMaskIntoConstraints="NO" id="Ul2-Fb-Vgr">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome User! You are now in Research." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvg-f2-jTf">
-                                <rect key="frame" x="20" y="89" width="655" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="34"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="bfR-mx-p3g"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="km0-4E-Rjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2022.65625" y="176.953125"/>
-        </scene>
-        <!--View Controller-->
+        <!--Science View Controller-->
         <scene sceneID="oDU-an-dVM">
             <objects>
-                <viewController id="pau-Ec-DT7" sceneMemberID="viewController">
+                <viewController id="pau-Ec-DT7" customClass="scienceViewController" customModule="OfficialLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zSZ-1x-JId">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -478,38 +386,10 @@
             </objects>
             <point key="canvasLocation" x="2240.625" y="-528.515625"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="p1R-8q-h5s">
-            <objects>
-                <viewController id="EIG-eB-4Xy" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2Z5-vs-QR6">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BOOKS" translatesAutoresizingMaskIntoConstraints="NO" id="E0l-vw-UiR">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome User! You are now in Social Science." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPw-fc-5Zd">
-                                <rect key="frame" x="20" y="89" width="655" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="34"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="SYc-ev-sOs"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rb5-Aq-R6q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2897.65625" y="-523.2421875"/>
-        </scene>
-        <!--View Controller-->
+        <!--Media View Controller-->
         <scene sceneID="ZRU-lu-FgL">
             <objects>
-                <viewController id="HDQ-3l-DQP" sceneMemberID="viewController">
+                <viewController id="HDQ-3l-DQP" customClass="mediaViewController" customModule="OfficialLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ch9-bs-QAb">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -534,10 +414,10 @@
             </objects>
             <point key="canvasLocation" x="2742.1875" y="217.96875"/>
         </scene>
-        <!--View Controller-->
+        <!--Encyclopedia View Controller-->
         <scene sceneID="oJA-b9-bSu">
             <objects>
-                <viewController id="tqI-XC-uPr" sceneMemberID="viewController">
+                <viewController id="tqI-XC-uPr" customClass="encyclopediaViewController" customModule="OfficialLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HTZ-n1-lGq">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -562,10 +442,10 @@
             </objects>
             <point key="canvasLocation" x="-238.28125" y="910.54687499999989"/>
         </scene>
-        <!--View Controller-->
+        <!--Gale View Controller-->
         <scene sceneID="Rst-5g-QFO">
             <objects>
-                <viewController id="Zai-et-65I" sceneMemberID="viewController">
+                <viewController id="Zai-et-65I" customClass="galeViewController" customModule="OfficialLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lwx-dk-0Xq">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -590,10 +470,10 @@
             </objects>
             <point key="canvasLocation" x="390.625" y="910.54687499999989"/>
         </scene>
-        <!--View Controller-->
+        <!--Junior Resources View Controller-->
         <scene sceneID="jDW-Vs-gmE">
             <objects>
-                <viewController id="plt-XA-Rsc" sceneMemberID="viewController">
+                <viewController id="plt-XA-Rsc" customClass="juniorResourcesViewController" customModule="OfficialLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rB5-WG-ngX">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -618,10 +498,10 @@
             </objects>
             <point key="canvasLocation" x="1033.59375" y="910.54687499999989"/>
         </scene>
-        <!--View Controller-->
+        <!--Writing View Controller-->
         <scene sceneID="onE-jl-Pl5">
             <objects>
-                <viewController id="rTV-h2-ggS" sceneMemberID="viewController">
+                <viewController id="rTV-h2-ggS" customClass="writingViewController" customModule="OfficialLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Y2-M9-slh">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -646,10 +526,10 @@
             </objects>
             <point key="canvasLocation" x="1684.375" y="904.68749999999989"/>
         </scene>
-        <!--View Controller-->
+        <!--Resources View Controller-->
         <scene sceneID="vLH-hu-PKa">
             <objects>
-                <viewController id="60t-GH-JEM" sceneMemberID="viewController">
+                <viewController id="60t-GH-JEM" customClass="resourcesViewController" customModule="OfficialLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Ow-X5-UjP">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -681,10 +561,10 @@
             </objects>
             <point key="canvasLocation" x="-533.59375" y="-540.234375"/>
         </scene>
-        <!--View Controller-->
+        <!--College View Controller-->
         <scene sceneID="haA-ZD-LQf">
             <objects>
-                <viewController id="dBq-Zy-9aA" sceneMemberID="viewController">
+                <viewController id="dBq-Zy-9aA" customClass="collegeViewController" customModule="OfficialLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ioz-VG-3UV">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -709,10 +589,10 @@
             </objects>
             <point key="canvasLocation" x="-1901.5625" y="108.984375"/>
         </scene>
-        <!--View Controller-->
+        <!--Database View Controller-->
         <scene sceneID="azx-Nt-99o">
             <objects>
-                <viewController id="XeM-Qb-8gG" sceneMemberID="viewController">
+                <viewController id="XeM-Qb-8gG" customClass="databaseViewController" customModule="OfficialLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2xl-Qu-wcN">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -737,10 +617,10 @@
             </objects>
             <point key="canvasLocation" x="-1023.4375" y="108.984375"/>
         </scene>
-        <!--View Controller-->
+        <!--Social Science View Controller-->
         <scene sceneID="pEo-yv-WRz">
             <objects>
-                <viewController id="rDv-ey-rPq" sceneMemberID="viewController">
+                <viewController id="rDv-ey-rPq" customClass="socialScienceViewController" customModule="OfficialLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jYm-tU-Meu">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -772,10 +652,10 @@
             </objects>
             <point key="canvasLocation" x="175" y="-540.234375"/>
         </scene>
-        <!--View Controller-->
+        <!--Autos View Controller-->
         <scene sceneID="IVb-MC-L0h">
             <objects>
-                <viewController id="siB-IS-tUG" sceneMemberID="viewController">
+                <viewController id="siB-IS-tUG" customClass="autosViewController" customModule="OfficialLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3xr-6D-7qa">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -800,10 +680,10 @@
             </objects>
             <point key="canvasLocation" x="873.4375" y="-540.234375"/>
         </scene>
-        <!--View Controller-->
+        <!--Math View Controller-->
         <scene sceneID="sAO-AA-NFS">
             <objects>
-                <viewController id="EzF-WS-LzM" sceneMemberID="viewController">
+                <viewController id="EzF-WS-LzM" customClass="mathViewController" customModule="OfficialLibraryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qae-BP-o1L">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
