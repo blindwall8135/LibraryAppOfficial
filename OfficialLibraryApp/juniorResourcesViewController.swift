@@ -7,29 +7,42 @@
 //
 
 import UIKit
+import Firebase
 
 class juniorResourcesViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        var docRef : DocumentReference!
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            docRef = Firestore.firestore().document("/JuniorResources/5R7DOG1EIIg5xMfWQI7F")
+            docRef.getDocument { (TheGreatGatsbyDocSnapshot, error) in
+                guard let TheGreatGatsbyDocSnapshot = TheGreatGatsbyDocSnapshot, TheGreatGatsbyDocSnapshot.exists else { return }
+                let data = TheGreatGatsbyDocSnapshot.data()
+                let TheGreatGatsbyName = data["Name"] as? String ?? ""
+                let TheGreatGatsbyLink = data["Link"] as? String ?? ""
+                print(TheGreatGatsbyName)
+                print(TheGreatGatsbyLink)
+            }
+            docRef = Firestore.firestore().document("/JuniorResources/L36QfbVpStsPdVW6HBv8")
+            docRef.getDocument { (theAdventuresofHuckleberryFinnDocSnapshot, error) in
+                guard let theAdventuresofHuckleberryFinnDocSnapshot = theAdventuresofHuckleberryFinnDocSnapshot, theAdventuresofHuckleberryFinnDocSnapshot.exists else { return }
+                let data = theAdventuresofHuckleberryFinnDocSnapshot.data()
+                let theAdventuresofHuckleberryFinnName = data["Name"] as? String ?? ""
+                let theAdventuresofHuckleberryFinnLink = data["Link"] as? String ?? ""
+                print(theAdventuresofHuckleberryFinnName)
+                print(theAdventuresofHuckleberryFinnLink)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+            docRef = Firestore.firestore().document("/JuniorResources/RopSqMjz26qgNQlSWl6B")
+            docRef.getDocument { (TheScarletLetterDocSnapshot, error) in
+                guard let TheScarletLetterDocSnapshot = TheScarletLetterDocSnapshot, TheScarletLetterDocSnapshot.exists else { return }
+                let data = TheScarletLetterDocSnapshot.data()
+                let TheScarletLetterName = data["Name"] as? String ?? ""
+                let TheScarletLetterLink = data["Link"] as? String ?? ""
+                print(TheScarletLetterName)
+                print(TheScarletLetterLink)
 
 }
+    
+}
+}
+
