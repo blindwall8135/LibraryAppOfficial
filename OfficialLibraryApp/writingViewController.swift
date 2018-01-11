@@ -7,29 +7,60 @@
 //
 
 import UIKit
+import Firebase
 
 class writingViewController: UIViewController {
+        
+        var docRef : DocumentReference!
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            //Writing
+            docRef = Firestore.firestore().document("/Writing/d8YgNrUA6GhQQrH1cprL")
+            docRef.getDocument { (thesisStatementsDocSnapshot, error) in
+                guard let thesisStatementsDocSnapshot = thesisStatementsDocSnapshot, thesisStatementsDocSnapshot.exists else { return }
+                let data = thesisStatementsDocSnapshot.data()
+                let thesisStatementsName = data["Name"] as? String ?? ""
+                let thesisStatementsLink = data["Link"] as? String ?? ""
+                print(thesisStatementsName)
+                print(thesisStatementsLink)
+            }
+            
+                docRef = Firestore.firestore().document("/Writing/rp4mmxKp5yuutuDm6gKs")
+                docRef.getDocument { (OWLPerdueDocSnapshot, error) in
+                    guard let OWLPerdueDocSnapshot = OWLPerdueDocSnapshot, OWLPerdueDocSnapshot.exists else { return }
+                    let data = OWLPerdueDocSnapshot.data()
+                    let OWLPerdueName = data["Name"] as? String ?? ""
+                    let OWLPerdueLink = data["Link"] as? String ?? ""
+                    print(OWLPerdueName)
+                    print(OWLPerdueLink)
+            }
+            
+            docRef = Firestore.firestore().document("/Writing/vGY7I86syK7y4ComXDi0")
+            docRef.getDocument { (easyBibDocSnapshot, error) in
+                guard let easyBibDocSnapshot = easyBibDocSnapshot, easyBibDocSnapshot.exists else { return }
+                let data = easyBibDocSnapshot.data()
+                let easyBibName = data["Name"] as? String ?? ""
+                let easyBibLink = data["Link"] as? String ?? ""
+                print(easyBibName)
+                print(easyBibLink)
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+            
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+            docRef = Firestore.firestore().document("/Writing/y9adQ5tqJqTWhVch5UGy")
+            docRef.getDocument { (MELConWritingDocSnapshot, error) in
+                guard let MELConWritingDocSnapshot = MELConWritingDocSnapshot, MELConWritingDocSnapshot.exists else { return }
+                let data = MELConWritingDocSnapshot.data()
+                let MELConWritingName = data["Name"] as? String ?? ""
+                let MELConWritingLink = data["Link"] as? String ?? ""
+                print(MELConWritingName)
+                print(MELConWritingLink)
+            
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+}
+    
+}
+    
 }
