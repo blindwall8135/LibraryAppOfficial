@@ -7,29 +7,26 @@
 //
 
 import UIKit
+import Firebase
 
 class autosViewController: UIViewController {
-
+    
+    var docRef : DocumentReference!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        docRef = Firestore.firestore().document("/AllDataPro/w8Fw5cE6iPUgpDuG8Kcm")
+        docRef.getDocument { (allDataProDocSnapshot, error) in
+            guard let allDataProDocSnapshot = allDataProDocSnapshot, allDataProDocSnapshot.exists else { return }
+            let data = allDataProDocSnapshot.data()
+            let allDataProName = data["Name"] as? String ?? ""
+            let allDataProLink = data["Link"] as? String ?? ""
+            print(allDataProName)
+            print(allDataProLink)
+        }
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
