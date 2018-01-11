@@ -15,7 +15,7 @@ class biographyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        docRef = Firestore.firestore().document("/BiographyInContext/0ReyRdGIexFqB2BbIihT")
+        docRef = Firestore.firestore().document("/Biography in Context/0ReyRdGIexFqB2BbIihT")
         docRef.getDocument { (MitchCourseWebsiteDocSnapshot, error) in
             guard let MitchCourseWebsiteDocSnapshot = MitchCourseWebsiteDocSnapshot, MitchCourseWebsiteDocSnapshot.exists else { return }
             let data = MitchCourseWebsiteDocSnapshot.data()
@@ -24,7 +24,7 @@ class biographyViewController: UIViewController {
             print(MitchCourseWebsiteName)
             print(MitchCourseWebsiteLink)
         }
-        docRef = Firestore.firestore().document("/BiographyInContext/EmX2O5CkFdSzfTcyGCn3")
+        docRef = Firestore.firestore().document("/Biography in Context/EmX2O5CkFdSzfTcyGCn3")
         docRef.getDocument { (GeneticScienceLearningCenterDocSnapshot, error) in
             guard let GeneticScienceLearningCenterDocSnapshot = GeneticScienceLearningCenterDocSnapshot, GeneticScienceLearningCenterDocSnapshot.exists else { return }
             let data = GeneticScienceLearningCenterDocSnapshot.data()
@@ -33,7 +33,7 @@ class biographyViewController: UIViewController {
             print(GeneticScienceLearningCenterName)
             print(GeneticScienceLearningCenterLink)
         }
-        docRef = Firestore.firestore().document("/BiographyInContext/LnsGoBujTRDJDb7HjbM6")
+        docRef = Firestore.firestore().document("/Biography in Context/LnsGoBujTRDJDb7HjbM6")
         docRef.getDocument { (BiographyInContextCenterDocSnapshot, error) in
             guard let BiographyInContextCenterDocSnapshot = BiographyInContextCenterDocSnapshot, BiographyInContextCenterDocSnapshot.exists else { return }
             let data = BiographyInContextCenterDocSnapshot.data()
@@ -42,7 +42,7 @@ class biographyViewController: UIViewController {
             print(BiographyInContextCenterName)
             print(BiographyInContextCenterLink)
         }
-        docRef = Firestore.firestore().document("/BiographyInContext/qOxMphl2cfaNRPrdiYl1")
+        docRef = Firestore.firestore().document("/Biography in Context/qOxMphl2cfaNRPrdiYl1")
         docRef.getDocument { (HHMIBiointeractiveDocSnapshot, error) in
             guard let HHMIBiointeractiveDocSnapshot = HHMIBiointeractiveDocSnapshot, HHMIBiointeractiveDocSnapshot.exists else { return }
             let data = HHMIBiointeractiveDocSnapshot.data()
