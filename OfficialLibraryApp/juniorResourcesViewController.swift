@@ -14,7 +14,7 @@ class juniorResourcesViewController: UIViewController {
         var docRef : DocumentReference!
         override func viewDidLoad() {
             super.viewDidLoad()
-            docRef = Firestore.firestore().document("/JuniorResources/5R7DOG1EIIg5xMfWQI7F")
+            docRef = Firestore.firestore().document("/Junior Resources/5R7DOG1EIIg5xMfWQI7F")
             docRef.getDocument { (TheGreatGatsbyDocSnapshot, error) in
                 guard let TheGreatGatsbyDocSnapshot = TheGreatGatsbyDocSnapshot, TheGreatGatsbyDocSnapshot.exists else { return }
                 let data = TheGreatGatsbyDocSnapshot.data()
@@ -23,7 +23,7 @@ class juniorResourcesViewController: UIViewController {
                 print(TheGreatGatsbyName)
                 print(TheGreatGatsbyLink)
             }
-            docRef = Firestore.firestore().document("/JuniorResources/L36QfbVpStsPdVW6HBv8")
+            docRef = Firestore.firestore().document("/Junior Resources/L36QfbVpStsPdVW6HBv8")
             docRef.getDocument { (theAdventuresofHuckleberryFinnDocSnapshot, error) in
                 guard let theAdventuresofHuckleberryFinnDocSnapshot = theAdventuresofHuckleberryFinnDocSnapshot, theAdventuresofHuckleberryFinnDocSnapshot.exists else { return }
                 let data = theAdventuresofHuckleberryFinnDocSnapshot.data()
@@ -32,7 +32,7 @@ class juniorResourcesViewController: UIViewController {
                 print(theAdventuresofHuckleberryFinnName)
                 print(theAdventuresofHuckleberryFinnLink)
     }
-            docRef = Firestore.firestore().document("/JuniorResources/RopSqMjz26qgNQlSWl6B")
+            docRef = Firestore.firestore().document("/Junior Resources/RopSqMjz26qgNQlSWl6B")
             docRef.getDocument { (TheScarletLetterDocSnapshot, error) in
                 guard let TheScarletLetterDocSnapshot = TheScarletLetterDocSnapshot, TheScarletLetterDocSnapshot.exists else { return }
                 let data = TheScarletLetterDocSnapshot.data()
