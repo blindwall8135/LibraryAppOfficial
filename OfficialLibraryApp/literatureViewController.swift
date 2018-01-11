@@ -7,29 +7,26 @@
 //
 
 import UIKit
+import Firebase
 
 class literatureViewController: UIViewController {
 
+    var docRef : DocumentReference!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        docRef = Firestore.firestore().document("/Literature/Gb64WyC52iEPS9YQLocY")
+        docRef.getDocument { (LitfinderDocSnapshot, error) in
+            guard let LitfinderDocSnapshot = LitfinderDocSnapshot, LitfinderDocSnapshot.exists else { return }
+            let data = LitfinderDocSnapshot.data()
+            let LitfinderName = data["Name"] as? String ?? ""
+            let LitfinderLink = data["Link"] as? String ?? ""
+            print(LitfinderName)
+            print(LitfinderLink)
+            
+            
+            
+        }
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+}
 }
