@@ -7,29 +7,22 @@
 //
 
 import UIKit
+import Firebase
 
 class databaseNewspapersViewController: UIViewController {
-
+   var docRef : DocumentReference!
     override func viewDidLoad() {
         super.viewDidLoad()
+        docRef = Firestore.firestore().document("/Database Newspapers/98Aie9050IZFwkQ4XhnQ")
+        docRef.getDocument { (newspaperSourcePlusDocSnapshot, error) in
+            guard let newspaperSourcePlusDocSnapshot = newspaperSourcePlusDocSnapshot, newspaperSourcePlusDocSnapshot.exists else { return }
+            let data = newspaperSourcePlusDocSnapshot.data()
+            let newspaperSourcePlusName = data["Name"] as? String ?? ""
+            let newspaperSourcePlusLink = data["Link"] as? String ?? ""
+            print(newspaperSourcePlusName)
+            print(newspaperSourcePlusLink)
+        }
 
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
