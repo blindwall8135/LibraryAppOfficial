@@ -14,7 +14,7 @@ class mathViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        docRef = Firestore.firestore().document("/Math/rnAnHt1DcxcTxxVTzA66")
+        docRef = Firestore.firestore().document("/Math Resources/rnAnHt1DcxcTxxVTzA66")
         docRef.getDocument { (WolframAlphaDocSnapshot, error) in
             guard let WolframAlphaDocSnapshot = WolframAlphaDocSnapshot, WolframAlphaDocSnapshot.exists else { return }
             let data = WolframAlphaDocSnapshot.data()
