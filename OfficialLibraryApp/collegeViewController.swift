@@ -7,29 +7,25 @@
 //
 
 import UIKit
+import Firebase
 
 class collegeViewController: UIViewController {
 
+    var docRef : DocumentReference!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        docRef = Firestore.firestore().document("/College and Career/Mp4Fw99kBNchbOGKAkmi")
+        docRef.getDocument { (CareerCruisingDocSnapshot, error) in
+            guard let CareerCruisingDocSnapshot = CareerCruisingDocSnapshot, CareerCruisingDocSnapshot.exists else { return }
+            let data = CareerCruisingDocSnapshot.data()
+            let CareerCruisingName = data["Name"] as? String ?? ""
+            let CareerCruisingLink = data["Link"] as? String ?? ""
+            print(CareerCruisingName)
+            print(CareerCruisingLink)
+        }
+        
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+}
 }
