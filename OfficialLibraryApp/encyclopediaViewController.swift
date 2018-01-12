@@ -7,29 +7,62 @@
 //
 
 import UIKit
-
+import Firebase
 class encyclopediaViewController: UIViewController {
 
+    var docRef : DocumentReference!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+        
+        
+        docRef = Firestore.firestore().document("/Encyclopedias/D3vTKKcd83gS8i5vcOyJ")
+        docRef.getDocument { (EncyclopediaofModernAsiaDocSnapshot, error) in
+            guard let EncyclopediaofModernAsiaDocSnapshot = EncyclopediaofModernAsiaDocSnapshot, EncyclopediaofModernAsiaDocSnapshot.exists else { return }
+            let data = EncyclopediaofModernAsiaDocSnapshot.data()
+            let EncyclopediaofModernAsiaName = data["Name"] as? String ?? ""
+            let EncyclopediaofModernAsiaLink = data["Link"] as? String ?? ""
+            print(EncyclopediaofModernAsiaName)
+            print(EncyclopediaofModernAsiaLink)
+        }
+        
+        docRef = Firestore.firestore().document("/Encyclopedias/JHpSCqEQ7PQkir8glhxt")
+        docRef.getDocument { (WorldBookEncyclopediaDocSnapshot, error) in
+            guard let WorldBookEncyclopediaDocSnapshot = WorldBookEncyclopediaDocSnapshot, WorldBookEncyclopediaDocSnapshot.exists else { return }
+            let data = WorldBookEncyclopediaDocSnapshot.data()
+            let WorldBookEncyclopediaName = data["Name"] as? String ?? ""
+            let WorldBookEncyclopediaLink = data["Link"] as? String ?? ""
+            print(WorldBookEncyclopediaName)
+            print(WorldBookEncyclopediaLink)
+        }
+        
+        docRef = Firestore.firestore().document("/Encyclopedias/V3qt5ZsnHuXjw78meFIq")
+        docRef.getDocument { (EncyclopediaofWorldCitiesDocSnapshot, error) in
+            guard let EncyclopediaofWorldCitiesDocSnapshot = EncyclopediaofWorldCitiesDocSnapshot, EncyclopediaofWorldCitiesDocSnapshot.exists else { return }
+            let data = EncyclopediaofWorldCitiesDocSnapshot.data()
+            let EncyclopediaofWorldCitiesName = data["Name"] as? String ?? ""
+            let EncyclopediaofWorldCitiesLink = data["Link"] as? String ?? ""
+            print(EncyclopediaofWorldCitiesName)
+            print(EncyclopediaofWorldCitiesLink)
+        }
+        
+        docRef = Firestore.firestore().document("/Encyclopedias/Y7WEFM12lQUwB6yfIepb")
+        docRef.getDocument { (EncyclopediaofFoodandCultureDocSnapshot, error) in
+            guard let EncyclopediaofFoodandCultureDocSnapshot = EncyclopediaofFoodandCultureDocSnapshot, EncyclopediaofFoodandCultureDocSnapshot.exists else { return }
+            let data = EncyclopediaofFoodandCultureDocSnapshot.data()
+            let EncyclopediaofFoodandCultureName = data["Name"] as? String ?? ""
+            let EncyclopediaofFoodandCultureLink = data["Link"] as? String ?? ""
+            print(EncyclopediaofFoodandCultureName)
+            print(EncyclopediaofFoodandCultureLink)
+        }
+        
+        docRef = Firestore.firestore().document("/Encyclopedias/qaYNkLjYGKYbMxYfohSJ")
+        docRef.getDocument { (EncyclopediaofModernMiddleEastNorthAfricaDocSnapshot, error) in
+            guard let EncyclopediaofModernMiddleEastNorthAfricaDocSnapshot = EncyclopediaofModernMiddleEastNorthAfricaDocSnapshot, EncyclopediaofModernMiddleEastNorthAfricaDocSnapshot.exists else { return }
+            let data = EncyclopediaofModernMiddleEastNorthAfricaDocSnapshot.data()
+            let EncyclopediaofModernMiddleEastNorthAfricaName = data["Name"] as? String ?? ""
+            let EncyclopediaofModernMiddleEastNorthAfricaLink = data["Link"] as? String ?? ""
+            print(EncyclopediaofModernMiddleEastNorthAfricaName)
+            print(EncyclopediaofModernMiddleEastNorthAfricaLink)
+        }
+}
 }
