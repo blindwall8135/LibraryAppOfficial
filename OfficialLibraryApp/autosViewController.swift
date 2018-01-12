@@ -15,7 +15,7 @@ class autosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        docRef = Firestore.firestore().document("/AllDataPro/w8Fw5cE6iPUgpDuG8Kcm")
+        docRef = Firestore.firestore().document("/All Data Pro/w8Fw5cE6iPUgpDuG8Kcm")
         docRef.getDocument { (allDataProDocSnapshot, error) in
             guard let allDataProDocSnapshot = allDataProDocSnapshot, allDataProDocSnapshot.exists else { return }
             let data = allDataProDocSnapshot.data()
