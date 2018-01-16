@@ -10,7 +10,21 @@ import UIKit
 import Firebase
 
 class socialScienceViewController: UIViewController {
-   var docRef : DocumentReference!
+    @IBOutlet weak var geographyWorldButton: UIButton!
+    @IBOutlet weak var geographyUSButton: UIButton!
+    @IBOutlet weak var americanGovernmentButton: UIButton!
+    @IBOutlet weak var aBCCICLOButton: UIButton!
+    @IBOutlet weak var worldHistoryModernButton: UIButton!
+    @IBOutlet weak var dailyLifeThroughoutHistoryButton: UIButton!
+    @IBOutlet weak var worldHistoryAncientButton: UIButton!
+    @IBOutlet weak var countryReportsButton: UIButton!
+    @IBOutlet weak var americanHistoryButton: UIButton!
+    @IBOutlet weak var studentResourcesInContextButton: UIButton!
+    @IBOutlet weak var globalIssuesInContextButton: UIButton!
+    
+    
+    
+    var docRef : DocumentReference!
     override func viewDidLoad() {
         super.viewDidLoad()
         docRef = Firestore.firestore().document("/Social Science/544Ba9ux7xcwD3xpJ7qH")
@@ -19,7 +33,7 @@ class socialScienceViewController: UIViewController {
             let data = geoWorldDocSnapshot.data()
             let geoWorldName = data["Name"] as? String ?? ""
             let geoWorldLink = data["Link"] as? String ?? ""
-            print(geoWorldName)
+            self.geographyWorldButton.setTitle(geoWorldName, for: .normal)
             print(geoWorldLink)
         }
         docRef = Firestore.firestore().document("/Social Science/AlW66gajTYYwiFXTdmVK")
@@ -114,4 +128,32 @@ class socialScienceViewController: UIViewController {
         }
     }
 
+    @IBAction func whenGeoWorldPressed(_ sender: Any) {
+        
+    }
+    @IBAction func whenGeoUSPressed(_ sender: Any) {
+        
+    }
+    @IBAction func whenAmericanGovtPressed(_ sender: Any) {
+    }
+    
+    @IBAction func whenABCCICLOPressed(_ sender: Any) {
+    }
+    @IBAction func whenWHModernPressed(_ sender: Any) {
+    }
+    @IBAction func whenDailyLifePressed(_ sender: Any) {
+    }
+    @IBAction func whenWHAncientPressed(_ sender: Any) {
+    }
+    @IBAction func whenCountryReportsPressed(_ sender: Any) {
+    }
+    @IBAction func whenAmericanHistoryPressed(_ sender: Any) {
+    }
+    @IBAction func whenStuResourcesInContextPressed(_ sender: Any) {
+    }
+    @IBAction func whenGlobalIssuesInContextPressed(_ sender: Any) {
+    }
+    
+    
+    
 }
