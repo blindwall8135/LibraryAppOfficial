@@ -692,31 +692,40 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptT-1E-WCL">
-                                <rect key="frame" x="69" y="133" width="140" height="30"/>
+                                <rect key="frame" x="69" y="133" width="600" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Link 1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="whenGeoWorldPressed:" destination="rDv-ey-rPq" eventType="touchUpInside" id="nil-Ef-KFD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8f-pb-4cJ">
-                                <rect key="frame" x="69" y="204" width="140" height="30"/>
+                                <rect key="frame" x="69" y="204" width="600" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Link 2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="whenGeoUSPressed:" destination="rDv-ey-rPq" eventType="touchUpInside" id="uPe-Ak-cbz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVy-Zm-Moo">
-                                <rect key="frame" x="69" y="264" width="140" height="30"/>
+                                <rect key="frame" x="69" y="264" width="606" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Link 3">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="whenAmericanGovtPressed:" destination="rDv-ey-rPq" eventType="touchUpInside" id="9vN-eu-49n"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O65-9t-cX8">
-                                <rect key="frame" x="69" y="333" width="140" height="30"/>
+                                <rect key="frame" x="69" y="323" width="600" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Link 4">
@@ -724,81 +733,110 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdY-bJ-PIi">
-                                <rect key="frame" x="69" y="386" width="140" height="30"/>
+                                <rect key="frame" x="61" y="376" width="606" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Link 5">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="whenWHModernPressed:" destination="rDv-ey-rPq" eventType="touchUpInside" id="RH3-so-Wio"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euX-xg-V77">
-                                <rect key="frame" x="69" y="438" width="140" height="30"/>
+                                <rect key="frame" x="61" y="432" width="606" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Link 6">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="whenDailyLifePressed:" destination="rDv-ey-rPq" eventType="touchUpInside" id="qN2-xm-A0N"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRT-5V-hUf">
-                                <rect key="frame" x="69" y="497" width="140" height="30"/>
+                                <rect key="frame" x="61" y="486" width="606" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Link 7">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="whenWHAncientPressed:" destination="rDv-ey-rPq" eventType="touchUpInside" id="kbo-sd-nVq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thQ-CK-bch">
-                                <rect key="frame" x="69" y="552" width="140" height="30"/>
+                                <rect key="frame" x="69" y="533" width="591" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Link 8">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="whenCountryReportsPressed:" destination="rDv-ey-rPq" eventType="touchUpInside" id="i8G-HB-ZUS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pH-rJ-0W9">
-                                <rect key="frame" x="69" y="610" width="140" height="30"/>
+                                <rect key="frame" x="61" y="588" width="606" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Link 9">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="whenAmericanHistoryPressed:" destination="rDv-ey-rPq" eventType="touchUpInside" id="KES-3W-scE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEM-GN-qtA">
-                                <rect key="frame" x="69" y="664" width="140" height="30"/>
+                                <rect key="frame" x="45" y="638" width="648" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Link 10">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="whenStuResourcesInContextPressed:" destination="rDv-ey-rPq" eventType="touchUpInside" id="b5G-uI-oWK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhc-7n-AI3">
-                                <rect key="frame" x="69" y="742" width="140" height="30"/>
+                                <rect key="frame" x="13" y="704" width="703" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Link 11">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="whenGlobalIssuesInContextPressed:" destination="rDv-ey-rPq" eventType="touchUpInside" id="bFh-qw-66n"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zu3-wn-tEw">
-                                <rect key="frame" x="69" y="806" width="140" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fys-2e-2S6">
+                                <rect key="frame" x="69" y="323" width="600" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Link 12">
+                                <state key="normal" title="Link 4">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geG-En-9bi">
-                                <rect key="frame" x="36" y="865" width="207" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Link 13">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <connections>
+                                    <action selector="whenABCCICLOPressed:" destination="rDv-ey-rPq" eventType="touchUpInside" id="WJj-oE-weJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="CVY-jD-tel"/>
                     </view>
+                    <connections>
+                        <outlet property="aBCCICLOButton" destination="fys-2e-2S6" id="trC-ls-0Ou"/>
+                        <outlet property="americanGovernmentButton" destination="WVy-Zm-Moo" id="hD7-J2-DaC"/>
+                        <outlet property="americanHistoryButton" destination="3pH-rJ-0W9" id="kPG-O9-48w"/>
+                        <outlet property="countryReportsButton" destination="thQ-CK-bch" id="2Fc-p3-D1t"/>
+                        <outlet property="dailyLifeThroughoutHistoryButton" destination="euX-xg-V77" id="93X-T7-E3F"/>
+                        <outlet property="geographyUSButton" destination="w8f-pb-4cJ" id="FZ2-c9-Ge1"/>
+                        <outlet property="geographyWorldButton" destination="ptT-1E-WCL" id="sxl-7N-a4g"/>
+                        <outlet property="globalIssuesInContextButton" destination="dhc-7n-AI3" id="vb3-Jv-vfP"/>
+                        <outlet property="studentResourcesInContextButton" destination="uEM-GN-qtA" id="XeX-tc-yJt"/>
+                        <outlet property="worldHistoryAncientButton" destination="TRT-5V-hUf" id="sZN-XQ-mcT"/>
+                        <outlet property="worldHistoryModernButton" destination="EdY-bJ-PIi" id="T2b-ge-VNj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0aq-cE-V6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
