@@ -15,7 +15,7 @@ class databaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        docRef = Firestore.firestore().document("/DatabaseMagazines/25xaitH6e1Ems2QTDpYw")
+        docRef = Firestore.firestore().document("/Database Magazines/25xaitH6e1Ems2QTDpYw")
         docRef.getDocument { (globalIssuesInContextDocSnapshot, error) in
             guard let globalIssuesInContextDocSnapshot = globalIssuesInContextDocSnapshot, globalIssuesInContextDocSnapshot.exists else { return }
             let data = globalIssuesInContextDocSnapshot.data()
@@ -24,7 +24,7 @@ class databaseViewController: UIViewController {
             print(globalIssuesInContextName)
             print(globalIssuesInContextLink)
         }
-        docRef = Firestore.firestore().document("/DatabaseMagazines/5Djg4gQgr9XYWCtMPC5f")
+        docRef = Firestore.firestore().document("/Database Magazines/5Djg4gQgr9XYWCtMPC5f")
         docRef.getDocument { (cQResearcherDocSnapshot, error) in
             guard let cQResearcherDocSnapshot = cQResearcherDocSnapshot, cQResearcherDocSnapshot.exists else { return }
             let data = cQResearcherDocSnapshot.data()
@@ -33,7 +33,7 @@ class databaseViewController: UIViewController {
             print(cQResearcherName)
             print(cQResearcherLink)
         }
-        docRef = Firestore.firestore().document("/DatabaseMagazines/EtXxmNBTGRitap68dMRJ")
+        docRef = Firestore.firestore().document("/Database Magazines/EtXxmNBTGRitap68dMRJ")
         docRef.getDocument { (consumerResourcesDocSnapshot, error) in
             guard let consumerResourcesDocSnapshot = consumerResourcesDocSnapshot, consumerResourcesDocSnapshot.exists else { return }
             let data = consumerResourcesDocSnapshot.data()
@@ -42,7 +42,7 @@ class databaseViewController: UIViewController {
             print(consumerResourcesName)
             print(consumerResourcesLink)
         }
-        docRef = Firestore.firestore().document("/DatabaseMagazines/ HiYSe7o2Z3JRF8MA2CmJ")
+        docRef = Firestore.firestore().document("/Database Magazines/ HiYSe7o2Z3JRF8MA2CmJ")
         docRef.getDocument { (opposingViewpointsDocSnapshot, error) in
             guard let opposingViewpointsDocSnapshot = opposingViewpointsDocSnapshot, opposingViewpointsDocSnapshot.exists else { return }
             let data = opposingViewpointsDocSnapshot.data()
@@ -51,7 +51,7 @@ class databaseViewController: UIViewController {
             print(opposingViewpointsName)
             print(opposingViewpointsLink)
         }
-        docRef = Firestore.firestore().document("/DatabaseMagazines/ LJZf1pibVEbRPYc5VFpr")
+        docRef = Firestore.firestore().document("/Database Magazines/ LJZf1pibVEbRPYc5VFpr")
         docRef.getDocument { (studentResourcesDocSnapshot, error) in
             guard let studentResourcesDocSnapshot = studentResourcesDocSnapshot, studentResourcesDocSnapshot.exists else { return }
             let data = studentResourcesDocSnapshot.data()
@@ -60,7 +60,7 @@ class databaseViewController: UIViewController {
             print(studentResourcesName)
             print(studentResourcesLink)
         }
-    docRef = Firestore.firestore().document("/DatabaseMagazines/ LtQJGteo4udXn1MY5Pf8")
+    docRef = Firestore.firestore().document("/Database Magazines/ LtQJGteo4udXn1MY5Pf8")
     docRef.getDocument { (infotracDocSnapshot, error) in
     guard let infotracDocSnapshot = infotracDocSnapshot, infotracDocSnapshot.exists else { return }
     let data = infotracDocSnapshot.data()
@@ -69,7 +69,7 @@ class databaseViewController: UIViewController {
     print(infotracName)
     print(infotracLink)
     }
-        docRef = Firestore.firestore().document("/DatabaseMagazines/ Ot3s5BgNhSICbaejRE0C")
+        docRef = Firestore.firestore().document("/Database Magazines/ Ot3s5BgNhSICbaejRE0C")
         docRef.getDocument { (wilsonOmnimfileDocSnapshot, error) in
             guard let wilsonOmnimfileDocSnapshot = wilsonOmnimfileDocSnapshot, wilsonOmnimfileDocSnapshot.exists else { return }
             let data = wilsonOmnimfileDocSnapshot.data()
@@ -78,7 +78,7 @@ class databaseViewController: UIViewController {
             print(wilsonOmnimfileName)
             print(wilsonOmnimfileLink)
         }
-        docRef = Firestore.firestore().document("/DatabaseMagazines/ PVH6MXJU5uD34qrCV0ho")
+        docRef = Firestore.firestore().document("/Database Magazines/ PVH6MXJU5uD34qrCV0ho")
         docRef.getDocument { (tOPICSearchDocSnapshot, error) in
             guard let tOPICSearchDocSnapshot = tOPICSearchDocSnapshot, tOPICSearchDocSnapshot.exists else { return }
             let data = tOPICSearchDocSnapshot.data()
@@ -87,7 +87,7 @@ class databaseViewController: UIViewController {
             print(tOPICSearchName)
             print(tOPICSearchLink)
         }
-        docRef = Firestore.firestore().document("/DatabaseMagazines/TKlyN7GgqQr6VSlZ2v21")
+        docRef = Firestore.firestore().document("/Database Magazines/TKlyN7GgqQr6VSlZ2v21")
         docRef.getDocument { (sIRSDocSnapshot, error) in
             guard let sIRSDocSnapshot = sIRSDocSnapshot, sIRSDocSnapshot.exists else { return }
             let data = sIRSDocSnapshot.data()
@@ -96,7 +96,7 @@ class databaseViewController: UIViewController {
             print(sIRSName)
             print(sIRSLink)
         }
-        docRef = Firestore.firestore().document("/DatabaseMagazines/TuRfX3nBSYnIxEa0TxpH")
+        docRef = Firestore.firestore().document("/Database Magazines/TuRfX3nBSYnIxEa0TxpH")
         docRef.getDocument { (firstSearchDocSnapshot, error) in
             guard let firstSearchDocSnapshot = firstSearchDocSnapshot, firstSearchDocSnapshot.exists else { return }
             let data = firstSearchDocSnapshot.data()
@@ -105,7 +105,7 @@ class databaseViewController: UIViewController {
             print(firstSearchName)
             print(firstSearchLink)
         }
-        docRef = Firestore.firestore().document("/DatabaseMagazines/hbBKwpQsnqLHzl85lkVn")
+        docRef = Firestore.firestore().document("/Database Magazines/hbBKwpQsnqLHzl85lkVn")
         docRef.getDocument { (mASUltraDocSnapshot, error) in
             guard let mASUltraDocSnapshot = mASUltraDocSnapshot, mASUltraDocSnapshot.exists else { return }
             let data = mASUltraDocSnapshot.data()
@@ -114,7 +114,7 @@ class databaseViewController: UIViewController {
             print(mASUltraName)
             print(mASUltraLink)
         }
-        docRef = Firestore.firestore().document("/DatabaseMagazines/z1ImAc0iAdIufD4WQQ3R")
+        docRef = Firestore.firestore().document("/Database Magazines/z1ImAc0iAdIufD4WQQ3R")
         docRef.getDocument { (eBSCODocSnapshot, error) in
             guard let eBSCODocSnapshot = eBSCODocSnapshot, eBSCODocSnapshot.exists else { return }
             let data = eBSCODocSnapshot.data()
