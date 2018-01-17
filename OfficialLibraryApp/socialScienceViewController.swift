@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SafariServices
 
 class socialScienceViewController: UIViewController {
     @IBOutlet weak var geographyWorldButton: UIButton!
@@ -22,9 +23,19 @@ class socialScienceViewController: UIViewController {
     @IBOutlet weak var studentResourcesInContextButton: UIButton!
     @IBOutlet weak var globalIssuesInContextButton: UIButton!
     
-    
-    
+    var link1 = String()
+    var link2 = String()
+    var link3 = String()
+    var link4 = String()
+    var link5 = String()
+    var link6 = String()
+    var link7 = String()
+    var link8 = String()
+    var link9 = String()
+    var link10 = String()
+    var link11 = String()
     var docRef : DocumentReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         docRef = Firestore.firestore().document("/Social Science/544Ba9ux7xcwD3xpJ7qH")
@@ -34,7 +45,7 @@ class socialScienceViewController: UIViewController {
             let geoWorldName = data["Name"] as? String ?? ""
             let geoWorldLink = data["Link"] as? String ?? ""
             self.geographyWorldButton.setTitle(geoWorldName, for: .normal)
-            print(geoWorldLink)
+            self.link1 = geoWorldLink
         }
         docRef = Firestore.firestore().document("/Social Science/AlW66gajTYYwiFXTdmVK")
         docRef.getDocument { (geoUSDocSnapshot, error) in
@@ -42,8 +53,8 @@ class socialScienceViewController: UIViewController {
             let data = geoUSDocSnapshot.data()
             let geoUSName = data["Name"] as? String ?? ""
             let geoUSLink = data["Link"] as? String ?? ""
-            print(geoUSName)
-            print(geoUSLink)
+           self.geographyUSButton.setTitle(geoUSName, for: .normal)
+            self.link2 = geoUSLink
         }
         docRef = Firestore.firestore().document("/Social Science/QWDK6szLNdsQ82QloMpx")
         docRef.getDocument { (americanGovernmentDocSnapshot, error) in
@@ -51,8 +62,8 @@ class socialScienceViewController: UIViewController {
             let data = americanGovernmentDocSnapshot.data()
             let americanGovernmentName = data["Name"] as? String ?? ""
             let americanGovernmentLink = data["Link"] as? String ?? ""
-            print(americanGovernmentName)
-            print(americanGovernmentLink)
+            self.americanGovernmentButton.setTitle(americanGovernmentName, for: .normal)
+            self.link3 = americanGovernmentLink
         }
         docRef = Firestore.firestore().document("/Social Science/RXS1Fz4bPqG9Gdb29tcn")
         docRef.getDocument { (aBCCICLODocSnapshot, error) in
@@ -60,8 +71,8 @@ class socialScienceViewController: UIViewController {
             let data = aBCCICLODocSnapshot.data()
             let aBCCICLOName = data["Name"] as? String ?? ""
             let aBCCICLOLink = data["Link"] as? String ?? ""
-            print(aBCCICLOName)
-            print(aBCCICLOLink)
+            self.aBCCICLOButton.setTitle(aBCCICLOName, for: .normal)
+            self.link4 = aBCCICLOLink
         }
         docRef = Firestore.firestore().document("/Social Science/SBsmmTcPCwx4moSGlBW4")
         docRef.getDocument { (wHModernDocSnapshot, error) in
@@ -69,8 +80,8 @@ class socialScienceViewController: UIViewController {
             let data = wHModernDocSnapshot.data()
             let wHModernName = data["Name"] as? String ?? ""
             let wHModernLink = data["Link"] as? String ?? ""
-            print(wHModernName)
-            print(wHModernLink)
+            self.worldHistoryModernButton.setTitle(wHModernName, for: .normal)
+            self.link5 = wHModernLink
         }
         docRef = Firestore.firestore().document("/Social Science/SxNGZ03khMhhZQRZwCF1")
         docRef.getDocument { (dailyLifeDocSnapshot, error) in
@@ -78,8 +89,8 @@ class socialScienceViewController: UIViewController {
             let data = dailyLifeDocSnapshot.data()
             let dailyLifeName = data["Name"] as? String ?? ""
             let dailyLifeLink = data["Link"] as? String ?? ""
-            print(dailyLifeName)
-            print(dailyLifeLink)
+           self.dailyLifeThroughoutHistoryButton.setTitle(dailyLifeName, for: .normal)
+            self.link6 = dailyLifeLink
         }
         docRef = Firestore.firestore().document("/Social Science/U0QbF8d36yhmlybJYofK")
         docRef.getDocument { (wHAncientDocSnapshot, error) in
@@ -87,8 +98,8 @@ class socialScienceViewController: UIViewController {
             let data = wHAncientDocSnapshot.data()
             let wHAncientName = data["Name"] as? String ?? ""
             let wHAncientLink = data["Link"] as? String ?? ""
-            print(wHAncientName)
-            print(wHAncientLink)
+            self.worldHistoryAncientButton.setTitle(wHAncientName, for: .normal)
+          self.link7 = wHAncientLink
         }
         docRef = Firestore.firestore().document("/Social Science/WbH6VhJMbU7jJaUsA6pQ")
         docRef.getDocument { (countryReportsDocSnapshot, error) in
@@ -96,8 +107,8 @@ class socialScienceViewController: UIViewController {
             let data = countryReportsDocSnapshot.data()
             let countryReportsName = data["Name"] as? String ?? ""
             let countryReportsLink = data["Link"] as? String ?? ""
-            print(countryReportsName)
-            print(countryReportsLink)
+           self.countryReportsButton.setTitle(countryReportsName, for: .normal)
+            self.link8 = countryReportsLink
         }
         docRef = Firestore.firestore().document("/Social Science/wFio4nRkY9PCfFLsyeXp")
         docRef.getDocument { (americanHistoryDocSnapshot, error) in
@@ -105,8 +116,8 @@ class socialScienceViewController: UIViewController {
             let data = americanHistoryDocSnapshot.data()
             let americanHistoryName = data["Name"] as? String ?? ""
             let americanHistoryLink = data["Link"] as? String ?? ""
-            print(americanHistoryName)
-            print(americanHistoryLink)
+            self.americanHistoryButton.setTitle(americanHistoryName, for: .normal)
+            self.link9 = americanHistoryLink
         }
         docRef = Firestore.firestore().document("/Social Science/y5JeK6ym78sV55rluXS0")
         docRef.getDocument { (studentResourceinContextDocSnapshot, error) in
@@ -114,8 +125,8 @@ class socialScienceViewController: UIViewController {
             let data = studentResourceinContextDocSnapshot.data()
             let studentResourceinContextName = data["Name"] as? String ?? ""
             let studentResourceinContextLink = data["Link"] as? String ?? ""
-            print(studentResourceinContextName)
-            print(studentResourceinContextLink)
+        self.studentResourcesInContextButton.setTitle(studentResourceinContextName, for: .normal)
+           self.link10 = studentResourceinContextLink
         }
         docRef = Firestore.firestore().document("/Social Science/z3WyBQ4ojeWipCyfzYAm")
         docRef.getDocument { (globalIssuesinContextDocSnapshot, error) in
@@ -123,35 +134,64 @@ class socialScienceViewController: UIViewController {
             let data = globalIssuesinContextDocSnapshot.data()
             let globalIssuesinContextName = data["Name"] as? String ?? ""
             let globalIssuesinContextLink = data["Link"] as? String ?? ""
-            print(globalIssuesinContextName)
-            print(globalIssuesinContextLink)
+             self.globalIssuesInContextButton.setTitle(globalIssuesinContextName, for: .normal)
+            self.link11 = globalIssuesinContextLink
         }
     }
 
     @IBAction func whenGeoWorldPressed(_ sender: Any) {
-        
+        let svc = SFSafariViewController(url: NSURL(string: link1)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
+    
     @IBAction func whenGeoUSPressed(_ sender: Any) {
-        
+        let svc = SFSafariViewController(url: NSURL(string: link2)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
+    
     @IBAction func whenAmericanGovtPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link3)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
     
     @IBAction func whenABCCICLOPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link4)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
+    
     @IBAction func whenWHModernPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link5)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
+    
     @IBAction func whenDailyLifePressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link6)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
+    
     @IBAction func whenWHAncientPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link7)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
+    
     @IBAction func whenCountryReportsPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link8)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
+    
     @IBAction func whenAmericanHistoryPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link9)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
+    
     @IBAction func whenStuResourcesInContextPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link10)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
+    
     @IBAction func whenGlobalIssuesInContextPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link11)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
     
     
