@@ -11,7 +11,7 @@ import Firebase
 
 class collegeViewController: UIViewController {
 
-    @IBOutlet weak var carrerCruisingButton: UIButton!
+    @IBOutlet weak var careerCruisingButton: UIButton!
     var docRef : DocumentReference!
     override func viewDidLoad() {
         super.viewDidLoad()
