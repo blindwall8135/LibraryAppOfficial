@@ -10,7 +10,12 @@ import UIKit
 import Firebase
 
 class biographyViewController: UIViewController {
-
+    @IBOutlet weak var MitchCourseWebsite: UIButton!
+    @IBOutlet weak var GeneticScienceLearningCenter: UIButton!
+    @IBOutlet weak var BiograghyInContext: UIButton!
+    @IBOutlet weak var HHMIBiointeractive: UIButton!
+    
+    
     var docRef: DocumentReference!
     
     override func viewDidLoad() {
@@ -53,5 +58,19 @@ class biographyViewController: UIViewController {
         }
         
     }
+    @IBAction func MitchCourseWebsite(_ sender: Any) {
+    }
+    @IBAction func HHMIBiointeractive(_ sender: Any) {
+    }
+    @IBAction func BiographyInContext(_ sender: Any) {
+    }
+    @IBAction func GeneticScienceLearningCenter(_ sender: Any) {
+    }
+    
+    
+    }
 
-}
+    
+
+
+

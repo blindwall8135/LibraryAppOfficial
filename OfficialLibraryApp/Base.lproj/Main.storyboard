@@ -44,6 +44,10 @@
                                 <state key="normal" title="Link 1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="HHMIBiointeractive:" destination="0A6-9T-eVk" eventType="touchUpInside" id="ExN-Me-g6t"/>
+                                    <action selector="MitchCourseWebsite:" destination="0A6-9T-eVk" eventType="touchUpInside" id="zEA-Xf-NAv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNT-3B-Q5v">
                                 <rect key="frame" x="69" y="204" width="600" height="30"/>
@@ -52,6 +56,9 @@
                                 <state key="normal" title="Link 2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="GeneticScienceLearningCenter:" destination="0A6-9T-eVk" eventType="touchUpInside" id="HOY-yy-pMi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHv-E1-JQu">
                                 <rect key="frame" x="69" y="264" width="600" height="30"/>
@@ -60,6 +67,9 @@
                                 <state key="normal" title="Link 3">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="BiographyInContext:" destination="0A6-9T-eVk" eventType="touchUpInside" id="6M0-sF-w6S"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wn6-eu-W2c">
                                 <rect key="frame" x="64" y="328" width="600" height="30"/>
@@ -68,11 +78,20 @@
                                 <state key="normal" title="Link 4">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="HHMIBiointeractive:" destination="0A6-9T-eVk" eventType="touchUpInside" id="V4u-iL-eIw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="QTo-GK-xGh"/>
                     </view>
+                    <connections>
+                        <outlet property="BiograghyInContext" destination="EHv-E1-JQu" id="y9j-Sf-lee"/>
+                        <outlet property="GeneticScienceLearningCenter" destination="tNT-3B-Q5v" id="z0E-JO-MM5"/>
+                        <outlet property="HHMIBiointeractive" destination="wn6-eu-W2c" id="HuX-jv-35A"/>
+                        <outlet property="MitchCourseWebsite" destination="WaX-vQ-e2S" id="tZq-bn-ixr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="URu-gI-cxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -677,7 +696,6 @@
                     </view>
                     <connections>
                         <outlet property="careerCruisingButton" destination="4vz-NI-NjU" id="ZDn-jz-t1V"/>
-                        <outlet property="carrerCruisingButton" destination="4vz-NI-NjU" id="dq8-UI-89e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kv-HW-yta" userLabel="First Responder" sceneMemberID="firstResponder"/>
