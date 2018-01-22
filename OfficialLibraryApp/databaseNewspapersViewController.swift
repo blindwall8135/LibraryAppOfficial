@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 
 class databaseNewspapersViewController: UIViewController {
+    
    var docRef : DocumentReference!
     override func viewDidLoad() {
         super.viewDidLoad()
