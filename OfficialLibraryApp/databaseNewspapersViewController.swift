@@ -11,7 +11,11 @@ import Firebase
 
 class databaseNewspapersViewController: UIViewController {
     
-   var docRef : DocumentReference!
+    @IBOutlet weak var newspaperSourcePlus: UIButton!
+    @IBOutlet weak var newspaperSource: UIButton!
+    @IBOutlet weak var aPNews: UIButton!
+    @IBOutlet weak var webNews: UIButton!
+    var docRef : DocumentReference!
     override func viewDidLoad() {
         super.viewDidLoad()
         docRef = Firestore.firestore().document("/Database Newspapers/98Aie9050IZFwkQ4XhnQ")
@@ -51,5 +55,13 @@ class databaseNewspapersViewController: UIViewController {
             print(webNewsLink)
         }
     }
-
+    @IBAction func newspaperSourcePlus(_ sender: Any) {
+    }
+    
+    @IBAction func aPNews(_ sender: Any) {
+    }
+    @IBAction func newspaperSource(_ sender: Any) {
+    }
+    @IBAction func webNews(_ sender: Any) {
+    }
 }

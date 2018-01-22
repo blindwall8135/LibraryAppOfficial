@@ -123,6 +123,9 @@
                                 <state key="normal" title="Link 1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="newspaperSourcePlus:" destination="43E-wm-b5H" eventType="touchUpInside" id="FuS-Vd-emo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9O-n6-Kga">
                                 <rect key="frame" x="69" y="204" width="600" height="30"/>
@@ -131,6 +134,9 @@
                                 <state key="normal" title="Link 2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="aPNews:" destination="43E-wm-b5H" eventType="touchUpInside" id="b36-Gc-YeI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUe-UF-IYr">
                                 <rect key="frame" x="69" y="264" width="600" height="30"/>
@@ -139,6 +145,9 @@
                                 <state key="normal" title="Link 3">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="newspaperSource:" destination="43E-wm-b5H" eventType="touchUpInside" id="m14-8W-qa2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzL-NY-Ukg">
                                 <rect key="frame" x="64" y="328" width="600" height="30"/>
@@ -147,11 +156,20 @@
                                 <state key="normal" title="Link 4">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="webNews:" destination="43E-wm-b5H" eventType="touchUpInside" id="9Ug-jZ-Ben"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="H6q-pB-fcH"/>
                     </view>
+                    <connections>
+                        <outlet property="aPNews" destination="F9O-n6-Kga" id="sOx-Ob-KxC"/>
+                        <outlet property="newspaperSource" destination="SUe-UF-IYr" id="Anx-wd-7d3"/>
+                        <outlet property="newspaperSourcePlus" destination="ppC-Jv-aqC" id="eNl-2R-RpL"/>
+                        <outlet property="webNews" destination="vzL-NY-Ukg" id="Wlj-y0-G9P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RqT-cm-o70" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
