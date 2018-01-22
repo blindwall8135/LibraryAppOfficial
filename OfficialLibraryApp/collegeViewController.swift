@@ -11,6 +11,7 @@ import Firebase
 
 class collegeViewController: UIViewController {
 
+    @IBOutlet weak var carrerCruisingButton: UIButton!
     var docRef : DocumentReference!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,4 +29,7 @@ class collegeViewController: UIViewController {
         
 
 }
+    @IBAction func whenCareerCruisingPressed(_ sender: Any) {
+        
+    }
 }
