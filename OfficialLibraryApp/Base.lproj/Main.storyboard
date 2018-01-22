@@ -676,6 +676,7 @@
                         <viewLayoutGuide key="safeArea" id="ujy-aH-chr"/>
                     </view>
                     <connections>
+                        <outlet property="careerCruisingButton" destination="4vz-NI-NjU" id="ZDn-jz-t1V"/>
                         <outlet property="carrerCruisingButton" destination="4vz-NI-NjU" id="dq8-UI-89e"/>
                     </connections>
                 </viewController>
