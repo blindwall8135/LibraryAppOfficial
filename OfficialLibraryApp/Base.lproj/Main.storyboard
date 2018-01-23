@@ -45,7 +45,6 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="HHMIBiointeractive:" destination="0A6-9T-eVk" eventType="touchUpInside" id="ExN-Me-g6t"/>
                                     <action selector="MitchCourseWebsite:" destination="0A6-9T-eVk" eventType="touchUpInside" id="zEA-Xf-NAv"/>
                                 </connections>
                             </button>
