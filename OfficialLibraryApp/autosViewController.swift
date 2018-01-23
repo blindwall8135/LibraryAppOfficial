@@ -12,6 +12,7 @@ import Firebase
 class autosViewController: UIViewController {
     
     var docRef : DocumentReference!
+    @IBOutlet weak var allDataProButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,9 +25,11 @@ class autosViewController: UIViewController {
             print(allDataProName)
             print(allDataProLink)
         }
-        // Do any additional setup after loading the view.
+        
     }
-
+    @IBAction func allDataProPressed(_ sender: Any) {
+    }
+    
 
 
 }
