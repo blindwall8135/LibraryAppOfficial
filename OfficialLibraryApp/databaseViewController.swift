@@ -13,6 +13,19 @@ import Firebase
 class databaseViewController: UIViewController {
     var docRef : DocumentReference!
 
+    @IBOutlet weak var globalIssuesInContextButton: UIButton!
+    @IBOutlet weak var cQResearcherButton: UIButton!
+    @IBOutlet weak var consumerResourcesButton: UIButton!
+    @IBOutlet weak var opposingViewpointsButton: UIButton!
+    @IBOutlet weak var studentResourcesButton: UIButton!
+    @IBOutlet weak var infotracDocButton: UIButton!
+    @IBOutlet weak var wilsonOmnimfileButton: UIButton!
+    @IBOutlet weak var tOPICSearchButton: UIButton!
+    @IBOutlet weak var sIRSButton: UIButton!
+    @IBOutlet weak var firstSearchButton: UIButton!
+    @IBOutlet weak var mASUltraButton: UIButton!
+    @IBOutlet weak var eBSCOButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         docRef = Firestore.firestore().document("/Database Magazines/25xaitH6e1Ems2QTDpYw")
@@ -126,4 +139,29 @@ class databaseViewController: UIViewController {
     }
     }
 
+    @IBAction func globalIssuesInContextPressed(_ sender: Any) {
+    }
+    @IBAction func cQResearcherPressed(_ sender: Any) {
+    }
+    @IBAction func consumerResourcesPressed(_ sender: Any) {
+    }
+    @IBAction func opposingViewpointsPressed(_ sender: Any) {
+    }
+    @IBAction func studentResourcesPressed(_ sender: Any) {
+    }
+    @IBAction func infotracPressed(_ sender: Any) {
+    }
+    @IBAction func wilsonOmnimfilePressed(_ sender: Any) {
+    }
+    @IBAction func tOPICSearchPressed(_ sender: Any) {
+    }
+    @IBAction func sIRSPressed(_ sender: Any) {
+    }
+    @IBAction func firstSearchPressed(_ sender: Any) {
+    }
+
+    @IBAction func mASUltraPressed(_ sender: Any) {
+    }
+    @IBAction func eBSCOPressed(_ sender: Any) {
+    }
 }

@@ -45,7 +45,6 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="HHMIBiointeractive:" destination="0A6-9T-eVk" eventType="touchUpInside" id="ExN-Me-g6t"/>
                                     <action selector="MitchCourseWebsite:" destination="0A6-9T-eVk" eventType="touchUpInside" id="zEA-Xf-NAv"/>
                                 </connections>
                             </button>
@@ -778,6 +777,9 @@
                                 <state key="normal" title="Link 1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="globalIssuesInContextPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="nKk-Id-bmg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrR-er-Ecc">
                                 <rect key="frame" x="69" y="204" width="600" height="30"/>
@@ -786,6 +788,9 @@
                                 <state key="normal" title="Link 2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="cQResearcherPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="ujd-1s-dWQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKF-zo-kYz">
                                 <rect key="frame" x="69" y="264" width="600" height="30"/>
@@ -794,6 +799,9 @@
                                 <state key="normal" title="Link 3">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="consumerResourcesPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="M9A-hW-muU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sa5-EA-O8y">
                                 <rect key="frame" x="69" y="328" width="600" height="30"/>
@@ -802,6 +810,9 @@
                                 <state key="normal" title="Link 4">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="opposingViewpointsPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="GAB-BH-fHP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmm-7u-I9q">
                                 <rect key="frame" x="69" y="380" width="600" height="30"/>
@@ -810,6 +821,9 @@
                                 <state key="normal" title="Link 5">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="studentResourcesPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="eih-hI-EI2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RC-y1-MzE">
                                 <rect key="frame" x="69" y="432" width="600" height="30"/>
@@ -818,6 +832,9 @@
                                 <state key="normal" title="Link 6">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="infotracPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="Rjn-RE-HaQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lb-Wo-ybj">
                                 <rect key="frame" x="69" y="486" width="600" height="30"/>
@@ -826,6 +843,9 @@
                                 <state key="normal" title="Link 7">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="wilsonOmnimfilePressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="ZxC-aW-C1M"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eq5-dC-cNc">
                                 <rect key="frame" x="69" y="533" width="600" height="30"/>
@@ -834,6 +854,9 @@
                                 <state key="normal" title="Link 8">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="tOPICSearchPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="p7v-ah-oXk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbV-FM-DGc">
                                 <rect key="frame" x="69" y="588" width="600" height="30"/>
@@ -842,6 +865,9 @@
                                 <state key="normal" title="Link 9">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="sIRSPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="lUH-pQ-WTr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pi8-Aj-YIw">
                                 <rect key="frame" x="69" y="638" width="600" height="30"/>
@@ -850,6 +876,9 @@
                                 <state key="normal" title="Link 10">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="firstSearchPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="CY2-8x-Mtt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKr-DF-4zX">
                                 <rect key="frame" x="69" y="696" width="600" height="30"/>
@@ -858,6 +887,9 @@
                                 <state key="normal" title="Link 11">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="mASUltraPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="KRy-Ap-IRk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVS-Gc-IJ1">
                                 <rect key="frame" x="69" y="763" width="600" height="30"/>
@@ -866,11 +898,29 @@
                                 <state key="normal" title="Link 12">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="eBSCOPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="pTr-vK-fTk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Qn7-9c-X0i"/>
                     </view>
+                    <connections>
+                        <outlet property="cQResearcherButton" destination="rrR-er-Ecc" id="Bn8-Hh-pqQ"/>
+                        <outlet property="consumerResourcesButton" destination="pKF-zo-kYz" id="yEn-Lk-GHD"/>
+                        <outlet property="consumerResourcesPressed" destination="pKF-zo-kYz" id="NK9-fr-LiJ"/>
+                        <outlet property="eBSCOButton" destination="RVS-Gc-IJ1" id="7R4-dG-cIt"/>
+                        <outlet property="firstSearchButton" destination="pi8-Aj-YIw" id="PpA-dT-FXe"/>
+                        <outlet property="globalIssuesInContextButton" destination="ZXX-Ie-Cbw" id="5a0-wO-K17"/>
+                        <outlet property="infotracDocButton" destination="1RC-y1-MzE" id="gSJ-qd-6Sn"/>
+                        <outlet property="mASUltraButton" destination="fKr-DF-4zX" id="OVa-2s-RHy"/>
+                        <outlet property="opposingViewpointsButton" destination="sa5-EA-O8y" id="AzZ-48-j3I"/>
+                        <outlet property="sIRSButton" destination="BbV-FM-DGc" id="Pfz-mV-Rf7"/>
+                        <outlet property="studentResourcesButton" destination="kmm-7u-I9q" id="J0s-fZ-0I9"/>
+                        <outlet property="tOPICSearchButton" destination="Eq5-dC-cNc" id="4ha-kA-kqy"/>
+                        <outlet property="wilsonOmnimfileButton" destination="2lb-Wo-ybj" id="8zB-67-BVO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1h-oK-JZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
