@@ -8,13 +8,18 @@
 
 import UIKit
 import Firebase
+import SafariServices
 
 class biographyViewController: UIViewController {
     @IBOutlet weak var MitchCourseWebsite: UIButton!
     @IBOutlet weak var GeneticScienceLearningCenter: UIButton!
     @IBOutlet weak var BiograghyInContext: UIButton!
     @IBOutlet weak var HHMIBiointeractive: UIButton!
-    
+    var link1 = String()
+    var link2 = String()
+    var link3 = String()
+    var link4 = String()
+
     
     var docRef: DocumentReference!
     
@@ -26,8 +31,9 @@ class biographyViewController: UIViewController {
             let data = MitchCourseWebsiteDocSnapshot.data()
             let MitchCourseWebsiteName = data["Name"] as? String ?? ""
             let MitchCourseWebsiteLink = data["Link"] as? String ?? ""
-            print(MitchCourseWebsiteName)
-            print(MitchCourseWebsiteLink)
+            self.MitchCourseWebsite.setTitle(MitchCourseWebsiteName, for: .normal)
+            self.link1 = MitchCourseWebsiteLink
+
         }
         docRef = Firestore.firestore().document("/Biography in Context/EmX2O5CkFdSzfTcyGCn3")
         docRef.getDocument { (GeneticScienceLearningCenterDocSnapshot, error) in
@@ -35,8 +41,9 @@ class biographyViewController: UIViewController {
             let data = GeneticScienceLearningCenterDocSnapshot.data()
             let GeneticScienceLearningCenterName = data["Name"] as? String ?? ""
             let GeneticScienceLearningCenterLink = data["Link"] as? String ?? ""
-            print(GeneticScienceLearningCenterName)
-            print(GeneticScienceLearningCenterLink)
+            self.GeneticScienceLearningCenter.setTitle(GeneticScienceLearningCenterName, for: .normal)
+            self.link2 = GeneticScienceLearningCenterLink
+
         }
         docRef = Firestore.firestore().document("/Biography in Context/LnsGoBujTRDJDb7HjbM6")
         docRef.getDocument { (BiographyInContextCenterDocSnapshot, error) in
@@ -44,8 +51,9 @@ class biographyViewController: UIViewController {
             let data = BiographyInContextCenterDocSnapshot.data()
             let BiographyInContextCenterName = data["Name"] as? String ?? ""
             let BiographyInContextCenterLink = data["Link"] as? String ?? ""
-            print(BiographyInContextCenterName)
-            print(BiographyInContextCenterLink)
+            self.BiograghyInContext.setTitle(BiographyInContextCenterName, for: .normal)
+            self.link3 = BiographyInContextCenterLink
+
         }
         docRef = Firestore.firestore().document("/Biography in Context/qOxMphl2cfaNRPrdiYl1")
         docRef.getDocument { (HHMIBiointeractiveDocSnapshot, error) in
@@ -53,18 +61,31 @@ class biographyViewController: UIViewController {
             let data = HHMIBiointeractiveDocSnapshot.data()
             let HHMIBiointeractiveName = data["Name"] as? String ?? ""
             let HHMIBiointeractiveLink = data["Link"] as? String ?? ""
-            print(HHMIBiointeractiveName)
-            print(HHMIBiointeractiveLink)
+            self.HHMIBiointeractive.setTitle(HHMIBiointeractiveName, for: .normal)
+            self.link4 = HHMIBiointeractiveLink
+
         }
         
     }
     @IBAction func MitchCourseWebsite(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link1)! as URL)
+        self.present(svc, animated: true, completion: nil)
+
     }
     @IBAction func HHMIBiointeractive(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link4)! as URL)
+        self.present(svc, animated: true, completion: nil)
+
     }
     @IBAction func BiographyInContext(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link3)! as URL)
+        self.present(svc, animated: true, completion: nil)
+
     }
     @IBAction func GeneticScienceLearningCenter(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link2)! as URL)
+        self.present(svc, animated: true, completion: nil)
+
     }
     
     
