@@ -938,7 +938,6 @@
                     <connections>
                         <outlet property="cQResearcherButton" destination="rrR-er-Ecc" id="Bn8-Hh-pqQ"/>
                         <outlet property="consumerResourcesButton" destination="pKF-zo-kYz" id="yEn-Lk-GHD"/>
-                        <outlet property="consumerResourcesPressed" destination="pKF-zo-kYz" id="NK9-fr-LiJ"/>
                         <outlet property="eBSCOButton" destination="RVS-Gc-IJ1" id="7R4-dG-cIt"/>
                         <outlet property="firstSearchButton" destination="pi8-Aj-YIw" id="PpA-dT-FXe"/>
                         <outlet property="globalIssuesInContextButton" destination="ZXX-Ie-Cbw" id="5a0-wO-K17"/>
