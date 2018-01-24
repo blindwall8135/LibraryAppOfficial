@@ -596,6 +596,9 @@
                                 <state key="normal" title="Link 1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="TheGreatGatsbyPressed:" destination="plt-XA-Rsc" eventType="touchUpInside" id="UU8-iN-PGT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LD-RF-mVc">
                                 <rect key="frame" x="69" y="204" width="600" height="30"/>
@@ -604,6 +607,9 @@
                                 <state key="normal" title="Link 2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="theAdventuresofHuckleberryFinnPressed:" destination="plt-XA-Rsc" eventType="touchUpInside" id="CGf-rL-Pya"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtA-Wa-j3g">
                                 <rect key="frame" x="69" y="264" width="600" height="30"/>
@@ -612,6 +618,9 @@
                                 <state key="normal" title="Link 3">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="TheScarletLetterPressed:" destination="plt-XA-Rsc" eventType="touchUpInside" id="odM-yG-uJS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

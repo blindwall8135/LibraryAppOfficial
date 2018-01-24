@@ -47,5 +47,11 @@ class juniorResourcesViewController: UIViewController {
 }
     
 }
+    @IBAction func TheGreatGatsbyPressed(_ sender: Any) {
+    }
+    @IBAction func theAdventuresofHuckleberryFinnPressed(_ sender: Any) {
+    }
+    @IBAction func TheScarletLetterPressed(_ sender: Any) {
+    }
 }
 
