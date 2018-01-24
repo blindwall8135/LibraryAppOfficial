@@ -11,7 +11,10 @@ import Firebase
 
 class juniorResourcesViewController: UIViewController {
 
-        var docRef : DocumentReference!
+    @IBOutlet weak var TheGreatGatsbyButton: UIButton!
+    @IBOutlet weak var theAdventuresofHuckleberryFinnButton: UIButton!
+    @IBOutlet weak var TheScarletLetterButton: UIButton!
+    var docRef : DocumentReference!
         override func viewDidLoad() {
             super.viewDidLoad()
             docRef = Firestore.firestore().document("/Junior Resources/5R7DOG1EIIg5xMfWQI7F")
@@ -44,5 +47,11 @@ class juniorResourcesViewController: UIViewController {
 }
     
 }
+    @IBAction func TheGreatGatsbyPressed(_ sender: Any) {
+    }
+    @IBAction func theAdventuresofHuckleberryFinnPressed(_ sender: Any) {
+    }
+    @IBAction func TheScarletLetterPressed(_ sender: Any) {
+    }
 }
 
