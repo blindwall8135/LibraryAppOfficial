@@ -193,6 +193,70 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FS-y5-10e">
+                                <rect key="frame" x="69" y="133" width="600" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Link 1">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTI-iz-cbC">
+                                <rect key="frame" x="69" y="204" width="600" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Link 2">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFi-Jd-OEo">
+                                <rect key="frame" x="69" y="264" width="600" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Link 3">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Col-q9-bYN">
+                                <rect key="frame" x="69" y="328" width="600" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Link 4">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51E-46-mWJ">
+                                <rect key="frame" x="69" y="376" width="600" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Link 5">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Rq-hy-uCb">
+                                <rect key="frame" x="69" y="432" width="600" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Link 6">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gc-Bf-Yc2">
+                                <rect key="frame" x="69" y="486" width="600" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Link 7">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlv-K1-ejq">
+                                <rect key="frame" x="69" y="533" width="600" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Link 8">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="kZf-x6-r2H"/>
@@ -816,7 +880,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="globalIssuesInContextPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="nKk-Id-bmg"/>
+                                    <action selector="globalIssuesInContextPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="2fu-Fo-MCN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrR-er-Ecc">
@@ -827,7 +891,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="cQResearcherPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="ujd-1s-dWQ"/>
+                                    <action selector="cQResearcherPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="LuH-nR-Jr3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKF-zo-kYz">
@@ -838,7 +902,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="consumerResourcesPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="M9A-hW-muU"/>
+                                    <action selector="consumerResourcesPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="gHI-eI-xgI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sa5-EA-O8y">
@@ -849,7 +913,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="opposingViewpointsPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="GAB-BH-fHP"/>
+                                    <action selector="opposingViewpointsPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="cDg-dA-zsL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmm-7u-I9q">
@@ -860,7 +924,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="studentResourcesPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="eih-hI-EI2"/>
+                                    <action selector="studentResourcesPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="6KZ-LH-KEa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RC-y1-MzE">
@@ -871,7 +935,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="infotracPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="Rjn-RE-HaQ"/>
+                                    <action selector="infotracPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="a0V-my-Wfr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lb-Wo-ybj">
@@ -882,7 +946,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="wilsonOmnimfilePressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="ZxC-aW-C1M"/>
+                                    <action selector="wilsonOmnimfilePressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="qaX-2F-UeM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eq5-dC-cNc">
@@ -893,7 +957,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="tOPICSearchPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="p7v-ah-oXk"/>
+                                    <action selector="tOPICSearchPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="SwP-iD-OkM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbV-FM-DGc">
@@ -904,7 +968,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="sIRSPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="lUH-pQ-WTr"/>
+                                    <action selector="sIRSPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="yzk-W2-31J"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pi8-Aj-YIw">
@@ -915,7 +979,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="firstSearchPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="CY2-8x-Mtt"/>
+                                    <action selector="firstSearchPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="Va2-pj-raX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKr-DF-4zX">
@@ -926,7 +990,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="mASUltraPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="KRy-Ap-IRk"/>
+                                    <action selector="mASUltraPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="VuZ-7F-9Ii"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVS-Gc-IJ1">
@@ -937,7 +1001,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="eBSCOPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="pTr-vK-fTk"/>
+                                    <action selector="eBSCOPressed:" destination="XeM-Qb-8gG" eventType="touchUpInside" id="wZf-Dw-wbn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -945,18 +1009,18 @@
                         <viewLayoutGuide key="safeArea" id="Qn7-9c-X0i"/>
                     </view>
                     <connections>
-                        <outlet property="cQResearcherButton" destination="rrR-er-Ecc" id="Bn8-Hh-pqQ"/>
-                        <outlet property="consumerResourcesButton" destination="pKF-zo-kYz" id="yEn-Lk-GHD"/>
-                        <outlet property="eBSCOButton" destination="RVS-Gc-IJ1" id="7R4-dG-cIt"/>
-                        <outlet property="firstSearchButton" destination="pi8-Aj-YIw" id="PpA-dT-FXe"/>
-                        <outlet property="globalIssuesInContextButton" destination="ZXX-Ie-Cbw" id="5a0-wO-K17"/>
-                        <outlet property="infotracDocButton" destination="1RC-y1-MzE" id="gSJ-qd-6Sn"/>
-                        <outlet property="mASUltraButton" destination="fKr-DF-4zX" id="OVa-2s-RHy"/>
-                        <outlet property="opposingViewpointsButton" destination="sa5-EA-O8y" id="AzZ-48-j3I"/>
-                        <outlet property="sIRSButton" destination="BbV-FM-DGc" id="Pfz-mV-Rf7"/>
-                        <outlet property="studentResourcesButton" destination="kmm-7u-I9q" id="J0s-fZ-0I9"/>
-                        <outlet property="tOPICSearchButton" destination="Eq5-dC-cNc" id="4ha-kA-kqy"/>
-                        <outlet property="wilsonOmnimfileButton" destination="2lb-Wo-ybj" id="8zB-67-BVO"/>
+                        <outlet property="cQResearcherButton" destination="rrR-er-Ecc" id="53T-du-v56"/>
+                        <outlet property="consumerResourcesButton" destination="pKF-zo-kYz" id="fXC-6U-fXH"/>
+                        <outlet property="eBSCOButton" destination="RVS-Gc-IJ1" id="MBb-zK-544"/>
+                        <outlet property="firstSearchButton" destination="pi8-Aj-YIw" id="LnK-Xb-3vQ"/>
+                        <outlet property="globalIssuesInContextButton" destination="ZXX-Ie-Cbw" id="ZbB-lZ-8Yu"/>
+                        <outlet property="infotracDocButton" destination="1RC-y1-MzE" id="cQ3-T9-xhl"/>
+                        <outlet property="mASUltraButton" destination="fKr-DF-4zX" id="kTN-bC-Icr"/>
+                        <outlet property="opposingViewpointsButton" destination="sa5-EA-O8y" id="KSP-L6-Kt8"/>
+                        <outlet property="sIRSButton" destination="BbV-FM-DGc" id="PHh-uh-Hiv"/>
+                        <outlet property="studentResourcesButton" destination="kmm-7u-I9q" id="XW9-W5-jNq"/>
+                        <outlet property="tOPICSearchButton" destination="Eq5-dC-cNc" id="EcD-nd-6cp"/>
+                        <outlet property="wilsonOmnimfileButton" destination="2lb-Wo-ybj" id="nQC-58-VlJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1h-oK-JZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>

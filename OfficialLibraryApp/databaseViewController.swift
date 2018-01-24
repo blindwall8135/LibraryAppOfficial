@@ -12,7 +12,6 @@ import SafariServices
 
 class databaseViewController: UIViewController {
     var docRef : DocumentReference!
-
     var link1 = String()
     var link2 = String()
     var link3 = String()
@@ -71,7 +70,7 @@ class databaseViewController: UIViewController {
             self.link3 = consumerResourcesLink
 
         }
-        docRef = Firestore.firestore().document("/Database Magazines/ HiYSe7o2Z3JRF8MA2CmJ")
+        docRef = Firestore.firestore().document("/Database Magazines/HiYSe7o2Z3JRF8MA2CmJ")
         docRef.getDocument { (opposingViewpointsDocSnapshot, error) in
             guard let opposingViewpointsDocSnapshot = opposingViewpointsDocSnapshot, opposingViewpointsDocSnapshot.exists else { return }
             let data = opposingViewpointsDocSnapshot.data()
@@ -79,6 +78,7 @@ class databaseViewController: UIViewController {
             let opposingViewpointsLink = data["Link"] as? String ?? ""
             self.opposingViewpointsButton.setTitle(opposingViewpointsName, for: .normal)
             self.link4 = opposingViewpointsLink
+            print(opposingViewpointsName)
         }
         docRef = Firestore.firestore().document("/Database Magazines/ LJZf1pibVEbRPYc5VFpr")
         docRef.getDocument { (studentResourcesDocSnapshot, error) in
