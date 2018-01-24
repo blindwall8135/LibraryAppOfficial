@@ -1154,7 +1154,6 @@
                         <viewLayoutGuide key="safeArea" id="B98-ZF-4yo"/>
                     </view>
                     <connections>
-                        <outlet property="allDataPro" destination="mUj-f3-yjN" id="Yoa-Xh-GCz"/>
                         <outlet property="allDataProButton" destination="mUj-f3-yjN" id="16i-JJ-8eM"/>
                     </connections>
                 </viewController>

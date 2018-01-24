@@ -8,10 +8,11 @@
 
 import UIKit
 import Firebase
-
+import SafariServices
 class autosViewController: UIViewController {
     
     var docRef : DocumentReference!
+    var link1 = String()
     @IBOutlet weak var allDataProButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +23,16 @@ class autosViewController: UIViewController {
             let data = allDataProDocSnapshot.data()
             let allDataProName = data["Name"] as? String ?? ""
             let allDataProLink = data["Link"] as? String ?? ""
-            print(allDataProName)
-            print(allDataProLink)
+            self.allDataProButton.setTitle(allDataProName, for: .normal)
+            self.link1 = allDataProLink
+
         }
         
     }
     @IBAction func allDataProPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link1)! as URL)
+        self.present(svc, animated: true, completion: nil)
+
     }
     
 
