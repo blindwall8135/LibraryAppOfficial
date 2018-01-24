@@ -617,6 +617,11 @@
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="a34-lB-B35"/>
                     </view>
+                    <connections>
+                        <outlet property="TheGreatGatsbyButton" destination="JHs-Qc-uP7" id="gE6-pl-z5p"/>
+                        <outlet property="TheScarletLetterButton" destination="FtA-Wa-j3g" id="9AD-vS-J5O"/>
+                        <outlet property="theAdventuresofHuckleberryFinnButton" destination="7LD-RF-mVc" id="xl3-z9-1or"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2S-Ai-IX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
