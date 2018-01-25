@@ -200,6 +200,9 @@
                                 <state key="normal" title="Link 1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="AmericansatWarDocPressed:" destination="STa-Hj-BUu" eventType="touchUpInside" id="qr8-IQ-l2k"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTI-iz-cbC">
                                 <rect key="frame" x="69" y="204" width="600" height="30"/>
@@ -208,6 +211,9 @@
                                 <state key="normal" title="Link 2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="CostumesandCulturePressed:" destination="STa-Hj-BUu" eventType="touchUpInside" id="AnF-9P-VE1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFi-Jd-OEo">
                                 <rect key="frame" x="69" y="264" width="600" height="30"/>
@@ -216,6 +222,9 @@
                                 <state key="normal" title="Link 3">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="GenocideandCrimesAgainstHumanityPressed:" destination="STa-Hj-BUu" eventType="touchUpInside" id="GL4-mP-lAP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Col-q9-bYN">
                                 <rect key="frame" x="69" y="328" width="600" height="30"/>
@@ -224,6 +233,9 @@
                                 <state key="normal" title="Link 4">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="BellBottomsPressed:" destination="STa-Hj-BUu" eventType="touchUpInside" id="f2N-FO-nTO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51E-46-mWJ">
                                 <rect key="frame" x="69" y="376" width="600" height="30"/>
@@ -232,6 +244,9 @@
                                 <state key="normal" title="Link 5">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="AmericanDecadesPressed:" destination="STa-Hj-BUu" eventType="touchUpInside" id="wBc-aW-8aB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Rq-hy-uCb">
                                 <rect key="frame" x="69" y="432" width="600" height="30"/>
@@ -240,6 +255,9 @@
                                 <state key="normal" title="Link 6">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="CitiesofTheWorldPressed:" destination="STa-Hj-BUu" eventType="touchUpInside" id="9ap-nr-nXG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gc-Bf-Yc2">
                                 <rect key="frame" x="69" y="486" width="600" height="30"/>
@@ -248,6 +266,9 @@
                                 <state key="normal" title="Link 7">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="EarlyCivilizationsintheAmericasPressed:" destination="STa-Hj-BUu" eventType="touchUpInside" id="fXc-Kr-0rQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlv-K1-ejq">
                                 <rect key="frame" x="69" y="533" width="600" height="30"/>
@@ -256,11 +277,24 @@
                                 <state key="normal" title="Link 8">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="StJamesEncyclopediaofPopCulturePressed:" destination="STa-Hj-BUu" eventType="touchUpInside" id="6AH-3N-Cf7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="kZf-x6-r2H"/>
                     </view>
+                    <connections>
+                        <outlet property="AmericanDecadesButton" destination="51E-46-mWJ" id="mtM-x3-UAF"/>
+                        <outlet property="AmericansatWarDocButton" destination="6FS-y5-10e" id="6g4-WA-A42"/>
+                        <outlet property="BellBottomsButton" destination="Col-q9-bYN" id="VD1-fW-lkS"/>
+                        <outlet property="CitiesofTheWorldButton" destination="2Rq-hy-uCb" id="i2T-2e-cr3"/>
+                        <outlet property="CostumesandCultureButton" destination="tTI-iz-cbC" id="UPa-Mp-PID"/>
+                        <outlet property="EarlyCivilizationsintheAmericasButton" destination="9Gc-Bf-Yc2" id="8lh-jO-gIl"/>
+                        <outlet property="GenocideandCrimesAgainstHumanityButton" destination="DFi-Jd-OEo" id="gXb-eb-Gc5"/>
+                        <outlet property="StJamesEncyclopediaofPopCultureButton" destination="Tlv-K1-ejq" id="tP7-VG-cJZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DrN-IZ-vX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
