@@ -78,9 +78,8 @@ class databaseViewController: UIViewController {
             let opposingViewpointsLink = data["Link"] as? String ?? ""
             self.opposingViewpointsButton.setTitle(opposingViewpointsName, for: .normal)
             self.link4 = opposingViewpointsLink
-            print(opposingViewpointsName)
         }
-        docRef = Firestore.firestore().document("/Database Magazines/ LJZf1pibVEbRPYc5VFpr")
+        docRef = Firestore.firestore().document("/Database Magazines/LJZf1pibVEbRPYc5VFpr")
         docRef.getDocument { (studentResourcesDocSnapshot, error) in
             guard let studentResourcesDocSnapshot = studentResourcesDocSnapshot, studentResourcesDocSnapshot.exists else { return }
             let data = studentResourcesDocSnapshot.data()
@@ -89,7 +88,7 @@ class databaseViewController: UIViewController {
             self.studentResourcesButton.setTitle(studentResourcesName, for: .normal)
             self.link5 = studentResourcesLink
         }
-    docRef = Firestore.firestore().document("/Database Magazines/ LtQJGteo4udXn1MY5Pf8")
+    docRef = Firestore.firestore().document("/Database Magazines/LtQJGteo4udXn1MY5Pf8")
     docRef.getDocument { (infotracDocSnapshot, error) in
     guard let infotracDocSnapshot = infotracDocSnapshot, infotracDocSnapshot.exists else { return }
     let data = infotracDocSnapshot.data()
@@ -98,7 +97,7 @@ class databaseViewController: UIViewController {
         self.infotracDocButton.setTitle(infotracName, for: .normal)
         self.link6 = infotracLink
     }
-        docRef = Firestore.firestore().document("/Database Magazines/ Ot3s5BgNhSICbaejRE0C")
+        docRef = Firestore.firestore().document("/Database Magazines/Ot3s5BgNhSICbaejRE0C")
         docRef.getDocument { (wilsonOmnimfileDocSnapshot, error) in
             guard let wilsonOmnimfileDocSnapshot = wilsonOmnimfileDocSnapshot, wilsonOmnimfileDocSnapshot.exists else { return }
             let data = wilsonOmnimfileDocSnapshot.data()
@@ -106,9 +105,8 @@ class databaseViewController: UIViewController {
             let wilsonOmnimfileLink = data["Link"] as? String ?? ""
             self.wilsonOmnimfileButton.setTitle(wilsonOmnimfileName, for: .normal)
             self.link7 = wilsonOmnimfileLink
-
         }
-        docRef = Firestore.firestore().document("/Database Magazines/ PVH6MXJU5uD34qrCV0ho")
+        docRef = Firestore.firestore().document("/Database Magazines/PVH6MXJU5uD34qrCV0ho")
         docRef.getDocument { (tOPICSearchDocSnapshot, error) in
             guard let tOPICSearchDocSnapshot = tOPICSearchDocSnapshot, tOPICSearchDocSnapshot.exists else { return }
             let data = tOPICSearchDocSnapshot.data()
@@ -116,7 +114,6 @@ class databaseViewController: UIViewController {
             let tOPICSearchLink = data["Link"] as? String ?? ""
             self.tOPICSearchButton.setTitle(tOPICSearchName, for: .normal)
             self.link8 = tOPICSearchLink
-
         }
         docRef = Firestore.firestore().document("/Database Magazines/TKlyN7GgqQr6VSlZ2v21")
         docRef.getDocument { (sIRSDocSnapshot, error) in
@@ -126,7 +123,6 @@ class databaseViewController: UIViewController {
             let sIRSLink = data["Link"] as? String ?? ""
             self.sIRSButton.setTitle(sIRSName, for: .normal)
             self.link9 = sIRSLink
-
         }
         docRef = Firestore.firestore().document("/Database Magazines/TuRfX3nBSYnIxEa0TxpH")
         docRef.getDocument { (firstSearchDocSnapshot, error) in
@@ -136,7 +132,6 @@ class databaseViewController: UIViewController {
             let firstSearchLink = data["Link"] as? String ?? ""
             self.firstSearchButton.setTitle(firstSearchName, for: .normal)
             self.link10 = firstSearchLink
-
         }
         docRef = Firestore.firestore().document("/Database Magazines/hbBKwpQsnqLHzl85lkVn")
         docRef.getDocument { (mASUltraDocSnapshot, error) in
@@ -155,7 +150,6 @@ class databaseViewController: UIViewController {
             let eBSCOLink = data["Link"] as? String ?? ""
             self.eBSCOButton.setTitle(eBSCOName, for: .normal)
             self.link12 = eBSCOLink
-
     }
     }
 
@@ -177,7 +171,6 @@ class databaseViewController: UIViewController {
     @IBAction func opposingViewpointsPressed(_ sender: Any) {
         let svc = SFSafariViewController(url: NSURL(string: link4)! as URL)
         self.present(svc, animated: true, completion: nil)
-
     }
     @IBAction func studentResourcesPressed(_ sender: Any) {
         let svc = SFSafariViewController(url: NSURL(string: link5)! as URL)
