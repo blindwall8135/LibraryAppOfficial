@@ -638,6 +638,9 @@
                                 <state key="normal" title="Link 1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="EncyclopediaofModernAsiaPressed:" destination="tqI-XC-uPr" eventType="touchUpInside" id="KBj-23-wd5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asu-cv-AVq">
                                 <rect key="frame" x="69" y="204" width="600" height="30"/>
@@ -646,6 +649,10 @@
                                 <state key="normal" title="Link 2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="EncyclopediaofModernAsiaPressed:" destination="tqI-XC-uPr" eventType="touchUpInside" id="6Av-sv-nkz"/>
+                                    <action selector="WorldBookEncyclopediaPressed:" destination="tqI-XC-uPr" eventType="touchUpInside" id="DWf-qs-c4u"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34X-bQ-m1p">
                                 <rect key="frame" x="69" y="264" width="600" height="30"/>
@@ -654,6 +661,10 @@
                                 <state key="normal" title="Link 3">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="EncyclopediaofWorldCitiesPressed:" destination="tqI-XC-uPr" eventType="touchUpInside" id="JGB-qS-wNM"/>
+                                    <action selector="WorldBookEncyclopediaPressed:" destination="tqI-XC-uPr" eventType="touchUpInside" id="V1z-pH-tWu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BaK-QW-a8D">
                                 <rect key="frame" x="69" y="328" width="600" height="30"/>
@@ -662,6 +673,9 @@
                                 <state key="normal" title="Link 4">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="EncyclopediaofFoodandCulturePressed:" destination="tqI-XC-uPr" eventType="touchUpInside" id="iMs-f3-Y18"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAE-Ea-Kyi">
                                 <rect key="frame" x="69" y="376" width="600" height="30"/>
@@ -670,11 +684,21 @@
                                 <state key="normal" title="Link 5">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="EncyclopediaofModernMiddleEastNorthAfricaPressed:" destination="tqI-XC-uPr" eventType="touchUpInside" id="qgr-Dn-UW7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Z7x-9H-Lq0"/>
                     </view>
+                    <connections>
+                        <outlet property="EncyclopediaofFoodandCultureButton" destination="BaK-QW-a8D" id="dui-5A-roi"/>
+                        <outlet property="EncyclopediaofModernAsiaButton" destination="FDY-oo-4Cz" id="vJX-fH-7MD"/>
+                        <outlet property="EncyclopediaofModernMiddleEastNorthAfricaButton" destination="cAE-Ea-Kyi" id="g8i-Fa-i9w"/>
+                        <outlet property="EncyclopediaofWorldCitiesButton" destination="34X-bQ-m1p" id="xrr-O0-oaM"/>
+                        <outlet property="WorldBookEncyclopediaButton" destination="asu-cv-AVq" id="9fV-TD-YGf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aiH-0f-zxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
