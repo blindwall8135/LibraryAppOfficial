@@ -10,6 +10,14 @@ import UIKit
 import Firebase
 class galeViewController: UIViewController {
 
+    @IBOutlet weak var ScienceinContextButton: UIButton!
+    @IBOutlet weak var OpposingViewpointsinContextButton: UIButton!
+    @IBOutlet weak var GALEPowerSearchButton: UIButton!
+    @IBOutlet weak var GlobalIssuesinContextButton: UIButton!
+    @IBOutlet weak var GaleVirtualReferenceButton: UIButton!
+    @IBOutlet weak var LitFinderButton: UIButton!
+    @IBOutlet weak var StudentResourceinContextButton: UIButton!
+    @IBOutlet weak var BiographyinContextButton: UIButton!
     var docRef : DocumentReference!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,4 +103,20 @@ class galeViewController: UIViewController {
             print(BiographyinContextLink)
         }
 }
+    @IBAction func ScienceinContextPressed(_ sender: Any) {
+    }
+    @IBAction func OpposingViewpointsinContextPressed(_ sender: Any) {
+    }
+    @IBAction func GALEPowerSearchPressed(_ sender: Any) {
+    }
+    @IBAction func GlobalIssuesinContextPressed(_ sender: Any) {
+    }
+    @IBAction func GaleVirtualReferencePressed(_ sender: Any) {
+    }
+    @IBAction func LitFinderPressed(_ sender: Any) {
+    }
+    @IBAction func StudentResourceinContextPressed(_ sender: Any) {
+    }
+    @IBAction func BiographyinContextPressed(_ sender: Any) {
+    }
 }
