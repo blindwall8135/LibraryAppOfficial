@@ -10,6 +10,11 @@ import UIKit
 import Firebase
 class encyclopediaViewController: UIViewController {
 
+    @IBOutlet weak var EncyclopediaofModernAsiaButton: UIButton!
+    @IBOutlet weak var WorldBookEncyclopediaButton: UIButton!
+    @IBOutlet weak var EncyclopediaofWorldCitiesButton: UIButton!
+    @IBOutlet weak var EncyclopediaofFoodandCultureButton: UIButton!
+    @IBOutlet weak var EncyclopediaofModernMiddleEastNorthAfricaButton: UIButton!
     var docRef : DocumentReference!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,4 +70,15 @@ class encyclopediaViewController: UIViewController {
             print(EncyclopediaofModernMiddleEastNorthAfricaLink)
         }
 }
+    @IBAction func EncyclopediaofModernAsiaPressed(_ sender: Any) {
+    }
+    @IBAction func WorldBookEncyclopediaPressed(_ sender: Any) {
+    }
+
+    @IBAction func EncyclopediaofWorldCitiesPressed(_ sender: Any) {
+    }
+    @IBAction func EncyclopediaofFoodandCulturePressed(_ sender: Any) {
+    }
+    @IBAction func EncyclopediaofModernMiddleEastNorthAfricaPressed(_ sender: Any) {
+    }
 }
