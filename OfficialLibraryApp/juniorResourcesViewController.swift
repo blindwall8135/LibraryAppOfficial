@@ -8,12 +8,17 @@
 
 import UIKit
 import Firebase
+import SafariServices
 
 class juniorResourcesViewController: UIViewController {
 
     @IBOutlet weak var TheGreatGatsbyButton: UIButton!
     @IBOutlet weak var theAdventuresofHuckleberryFinnButton: UIButton!
     @IBOutlet weak var TheScarletLetterButton: UIButton!
+    var link1 = String()
+    var link2 = String()
+    var link3 = String()
+
     var docRef : DocumentReference!
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -23,8 +28,9 @@ class juniorResourcesViewController: UIViewController {
                 let data = TheGreatGatsbyDocSnapshot.data()
                 let TheGreatGatsbyName = data["Name"] as? String ?? ""
                 let TheGreatGatsbyLink = data["Link"] as? String ?? ""
-                print(TheGreatGatsbyName)
-                print(TheGreatGatsbyLink)
+                self.TheGreatGatsbyButton.setTitle(TheGreatGatsbyName, for: .normal)
+                self.link1 = TheGreatGatsbyLink
+
             }
             docRef = Firestore.firestore().document("/Junior Resources/L36QfbVpStsPdVW6HBv8")
             docRef.getDocument { (theAdventuresofHuckleberryFinnDocSnapshot, error) in
@@ -32,8 +38,8 @@ class juniorResourcesViewController: UIViewController {
                 let data = theAdventuresofHuckleberryFinnDocSnapshot.data()
                 let theAdventuresofHuckleberryFinnName = data["Name"] as? String ?? ""
                 let theAdventuresofHuckleberryFinnLink = data["Link"] as? String ?? ""
-                print(theAdventuresofHuckleberryFinnName)
-                print(theAdventuresofHuckleberryFinnLink)
+                self.theAdventuresofHuckleberryFinnButton.setTitle(theAdventuresofHuckleberryFinnName, for: .normal)
+                self.link2 = theAdventuresofHuckleberryFinnLink
     }
             docRef = Firestore.firestore().document("/Junior Resources/RopSqMjz26qgNQlSWl6B")
             docRef.getDocument { (TheScarletLetterDocSnapshot, error) in
@@ -41,17 +47,24 @@ class juniorResourcesViewController: UIViewController {
                 let data = TheScarletLetterDocSnapshot.data()
                 let TheScarletLetterName = data["Name"] as? String ?? ""
                 let TheScarletLetterLink = data["Link"] as? String ?? ""
-                print(TheScarletLetterName)
-                print(TheScarletLetterLink)
+                self.TheScarletLetterButton.setTitle(TheScarletLetterName, for: .normal)
+                self.link3 = TheScarletLetterLink
 
 }
     
 }
     @IBAction func TheGreatGatsbyPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link1)! as URL)
+        self.present(svc, animated: true, completion: nil)
+
     }
     @IBAction func theAdventuresofHuckleberryFinnPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link2)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
     @IBAction func TheScarletLetterPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link3)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
 }
 
