@@ -730,6 +730,9 @@
                                 <state key="normal" title="Link 1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="ScienceinContextPressed:" destination="Zai-et-65I" eventType="touchUpInside" id="arN-zj-qgs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tke-7n-cBd">
                                 <rect key="frame" x="69" y="204" width="600" height="30"/>
@@ -738,6 +741,9 @@
                                 <state key="normal" title="Link 2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="OpposingViewpointsinContextPressed:" destination="Zai-et-65I" eventType="touchUpInside" id="TK4-qW-Xg9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ie-LL-sjc">
                                 <rect key="frame" x="69" y="264" width="600" height="30"/>
@@ -746,6 +752,9 @@
                                 <state key="normal" title="Link 3">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="GALEPowerSearchPressed:" destination="Zai-et-65I" eventType="touchUpInside" id="uAC-Uc-tgZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usi-gM-b5r">
                                 <rect key="frame" x="69" y="328" width="600" height="30"/>
@@ -754,6 +763,9 @@
                                 <state key="normal" title="Link 4">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="GlobalIssuesinContextPressed:" destination="Zai-et-65I" eventType="touchUpInside" id="Ir7-SB-EkZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9t-zx-CGq">
                                 <rect key="frame" x="69" y="376" width="600" height="30"/>
@@ -762,6 +774,9 @@
                                 <state key="normal" title="Link 5">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="GaleVirtualReferencePressed:" destination="Zai-et-65I" eventType="touchUpInside" id="up0-th-8Qp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGK-wk-YXx">
                                 <rect key="frame" x="69" y="432" width="600" height="30"/>
@@ -770,6 +785,9 @@
                                 <state key="normal" title="Link 6">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="LitFinderPressed:" destination="Zai-et-65I" eventType="touchUpInside" id="4Mh-pb-2F7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53F-KO-MEt">
                                 <rect key="frame" x="69" y="486" width="600" height="30"/>
@@ -778,6 +796,9 @@
                                 <state key="normal" title="Link 7">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="StudentResourceinContextPressed:" destination="Zai-et-65I" eventType="touchUpInside" id="6us-rN-4eZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJo-wv-H0L">
                                 <rect key="frame" x="69" y="533" width="600" height="30"/>
@@ -786,11 +807,24 @@
                                 <state key="normal" title="Link 8">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="BiographyinContextPressed:" destination="Zai-et-65I" eventType="touchUpInside" id="1QM-P0-SiX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="tCf-yh-JIQ"/>
                     </view>
+                    <connections>
+                        <outlet property="BiographyinContextButton" destination="NJo-wv-H0L" id="GuP-tU-Xmx"/>
+                        <outlet property="GALEPowerSearchButton" destination="8Ie-LL-sjc" id="Gtz-VR-hZ2"/>
+                        <outlet property="GaleVirtualReferenceButton" destination="m9t-zx-CGq" id="Q9i-Cf-V4W"/>
+                        <outlet property="GlobalIssuesinContextButton" destination="usi-gM-b5r" id="Jtx-bc-Wt1"/>
+                        <outlet property="LitFinderButton" destination="WGK-wk-YXx" id="u8V-sR-dq1"/>
+                        <outlet property="OpposingViewpointsinContextButton" destination="Tke-7n-cBd" id="t2Z-eT-Gso"/>
+                        <outlet property="ScienceinContextButton" destination="rhx-W5-Lcq" id="y8P-77-fIe"/>
+                        <outlet property="StudentResourceinContextButton" destination="53F-KO-MEt" id="nS8-Ef-BMe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YwT-CA-pmj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
