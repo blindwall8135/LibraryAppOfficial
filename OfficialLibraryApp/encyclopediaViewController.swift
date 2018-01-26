@@ -8,8 +8,13 @@
 
 import UIKit
 import Firebase
+import SafariServices
 class encyclopediaViewController: UIViewController {
-
+    var link1 = String()
+    var link2 = String()
+    var link3 = String()
+    var link4 = String()
+    var link5 = String()
     @IBOutlet weak var EncyclopediaofModernAsiaButton: UIButton!
     @IBOutlet weak var WorldBookEncyclopediaButton: UIButton!
     @IBOutlet weak var EncyclopediaofWorldCitiesButton: UIButton!
@@ -26,8 +31,9 @@ class encyclopediaViewController: UIViewController {
             let data = EncyclopediaofModernAsiaDocSnapshot.data()
             let EncyclopediaofModernAsiaName = data["Name"] as? String ?? ""
             let EncyclopediaofModernAsiaLink = data["Link"] as? String ?? ""
-            print(EncyclopediaofModernAsiaName)
-            print(EncyclopediaofModernAsiaLink)
+        self.EncyclopediaofModernAsiaButton.setTitle(EncyclopediaofModernAsiaName, for: .normal)
+        self.link1 = EncyclopediaofModernAsiaLink
+
         }
         
         docRef = Firestore.firestore().document("/Encyclopedias/JHpSCqEQ7PQkir8glhxt")
@@ -36,8 +42,9 @@ class encyclopediaViewController: UIViewController {
             let data = WorldBookEncyclopediaDocSnapshot.data()
             let WorldBookEncyclopediaName = data["Name"] as? String ?? ""
             let WorldBookEncyclopediaLink = data["Link"] as? String ?? ""
-            print(WorldBookEncyclopediaName)
-            print(WorldBookEncyclopediaLink)
+            self.WorldBookEncyclopediaButton.setTitle(WorldBookEncyclopediaName, for: .normal)
+            self.link2 = WorldBookEncyclopediaLink
+
         }
         
         docRef = Firestore.firestore().document("/Encyclopedias/V3qt5ZsnHuXjw78meFIq")
@@ -46,8 +53,9 @@ class encyclopediaViewController: UIViewController {
             let data = EncyclopediaofWorldCitiesDocSnapshot.data()
             let EncyclopediaofWorldCitiesName = data["Name"] as? String ?? ""
             let EncyclopediaofWorldCitiesLink = data["Link"] as? String ?? ""
-            print(EncyclopediaofWorldCitiesName)
-            print(EncyclopediaofWorldCitiesLink)
+        self.EncyclopediaofWorldCitiesButton.setTitle(EncyclopediaofWorldCitiesName, for: .normal)
+            self.link3 =  EncyclopediaofWorldCitiesLink
+
         }
         
         docRef = Firestore.firestore().document("/Encyclopedias/Y7WEFM12lQUwB6yfIepb")
@@ -56,8 +64,9 @@ class encyclopediaViewController: UIViewController {
             let data = EncyclopediaofFoodandCultureDocSnapshot.data()
             let EncyclopediaofFoodandCultureName = data["Name"] as? String ?? ""
             let EncyclopediaofFoodandCultureLink = data["Link"] as? String ?? ""
-            print(EncyclopediaofFoodandCultureName)
-            print(EncyclopediaofFoodandCultureLink)
+self.EncyclopediaofFoodandCultureButton.setTitle(EncyclopediaofFoodandCultureName, for: .normal)
+    self.link4 = EncyclopediaofFoodandCultureLink
+
         }
         
         docRef = Firestore.firestore().document("/Encyclopedias/qaYNkLjYGKYbMxYfohSJ")
@@ -66,19 +75,29 @@ class encyclopediaViewController: UIViewController {
             let data = EncyclopediaofModernMiddleEastNorthAfricaDocSnapshot.data()
             let EncyclopediaofModernMiddleEastNorthAfricaName = data["Name"] as? String ?? ""
             let EncyclopediaofModernMiddleEastNorthAfricaLink = data["Link"] as? String ?? ""
-            print(EncyclopediaofModernMiddleEastNorthAfricaName)
-            print(EncyclopediaofModernMiddleEastNorthAfricaLink)
+self.EncyclopediaofModernMiddleEastNorthAfricaButton.setTitle(EncyclopediaofModernMiddleEastNorthAfricaName, for: .normal)
+            self.link5 = EncyclopediaofModernMiddleEastNorthAfricaLink
+
         }
 }
     @IBAction func EncyclopediaofModernAsiaPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link1)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
     @IBAction func WorldBookEncyclopediaPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link2)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
-
     @IBAction func EncyclopediaofWorldCitiesPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link3)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
     @IBAction func EncyclopediaofFoodandCulturePressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link4)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
     @IBAction func EncyclopediaofModernMiddleEastNorthAfricaPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link5)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
 }
