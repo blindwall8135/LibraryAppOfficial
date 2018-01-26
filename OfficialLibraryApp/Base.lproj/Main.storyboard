@@ -957,6 +957,9 @@
                                 <state key="normal" title="Link 1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="MoodlePressed:" destination="60t-GH-JEM" eventType="touchUpInside" id="IgM-Lb-xUE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XQ-xp-DbV">
                                 <rect key="frame" x="69" y="204" width="600" height="30"/>
@@ -965,6 +968,9 @@
                                 <state key="normal" title="Link 2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="ParchmentPressed:" destination="60t-GH-JEM" eventType="touchUpInside" id="UD9-DW-dGt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcR-Oj-BTq">
                                 <rect key="frame" x="69" y="264" width="600" height="30"/>
@@ -973,6 +979,9 @@
                                 <state key="normal" title="Link 3">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="NaviancePressed:" destination="60t-GH-JEM" eventType="touchUpInside" id="dHR-N5-3N1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yN8-Bf-WGT">
                                 <rect key="frame" x="69" y="328" width="600" height="30"/>
@@ -981,6 +990,9 @@
                                 <state key="normal" title="Link 4">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="SchoologyPressed:" destination="60t-GH-JEM" eventType="touchUpInside" id="h0H-H8-ygD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4g-uJ-vR9">
                                 <rect key="frame" x="69" y="432" width="600" height="30"/>
@@ -989,6 +1001,9 @@
                                 <state key="normal" title="Link 6">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="InfiniteCampusPressed:" destination="60t-GH-JEM" eventType="touchUpInside" id="Sji-4t-YdS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQq-D4-aLl">
                                 <rect key="frame" x="69" y="376" width="600" height="30"/>
@@ -1002,6 +1017,14 @@
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ZDo-oz-kGC"/>
                     </view>
+                    <connections>
+                        <outlet property="DistrictEmailButton" destination="AQq-D4-aLl" id="uh4-6e-Oxq"/>
+                        <outlet property="InfiniteCampusButton" destination="z4g-uJ-vR9" id="Zkv-kQ-YZv"/>
+                        <outlet property="MoodleButton" destination="y9r-GF-Ov0" id="dZa-Fv-AAm"/>
+                        <outlet property="NavianceButton" destination="JcR-Oj-BTq" id="soY-JH-hwV"/>
+                        <outlet property="SchoologyButton" destination="yN8-Bf-WGT" id="vST-bn-MHx"/>
+                        <outlet property="TheParchmentButton" destination="5XQ-xp-DbV" id="lVB-fw-Hg6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TtR-WQ-b03" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

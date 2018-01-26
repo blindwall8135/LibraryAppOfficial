@@ -8,8 +8,22 @@
 
 import UIKit
 import Firebase
+import SafariServices
 class resourcesViewController: UIViewController {
 
+    @IBOutlet weak var TheParchmentButton: UIButton!
+    @IBOutlet weak var MoodleButton: UIButton!
+    @IBOutlet weak var NavianceButton: UIButton!
+    @IBOutlet weak var SchoologyButton: UIButton!
+    @IBOutlet weak var DistrictEmailButton: UIButton!
+    @IBOutlet weak var InfiniteCampusButton: UIButton!
+    var link1 = String()
+    var link2 = String()
+    var link3 = String()
+    var link4 = String()
+    var link5 = String()
+    var link6 = String()
+    
     var docRef : DocumentReference!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +34,8 @@ class resourcesViewController: UIViewController {
             let data = MoodleDocSnapshot.data()
             let MoodleName = data["Name"] as? String ?? ""
             let MoodleLink = data["Link"] as? String ?? ""
-            print(MoodleName)
-            print(MoodleLink)
-            
-            
-            
+        self.MoodleButton.setTitle(MoodleName, for: .normal)
+            self.link1 = MoodleLink
         }
         
         docRef = Firestore.firestore().document("/Applications/Pswyr9705C6Ces3twIHT")
@@ -33,9 +44,8 @@ class resourcesViewController: UIViewController {
             let data = ParchmentDocSnapshot.data()
             let ParchmentName = data["Name"] as? String ?? ""
             let ParchmentLink = data["Link"] as? String ?? ""
-            print(ParchmentName)
-            print(ParchmentLink)
-        
+            self.TheParchmentButton.setTitle(ParchmentName, for: .normal)
+            self.link2 = ParchmentLink
 
 }
         docRef = Firestore.firestore().document("/Applications/U1kWs8HAZCwjQti2Ptlv")
@@ -44,9 +54,8 @@ class resourcesViewController: UIViewController {
             let data = NavianceDocSnapshot.data()
             let NavianceName = data["Name"] as? String ?? ""
             let NavianceLink = data["Link"] as? String ?? ""
-            print(NavianceName)
-            print(NavianceLink)
-            
+            self.NavianceButton.setTitle(NavianceName, for: .normal)
+            self.link3 = NavianceLink
 }
         docRef = Firestore.firestore().document("/Applications/qvuhYT5YFAIzg7hsSwjz")
         docRef.getDocument { (SchoologyDocSnapshot, error) in
@@ -54,8 +63,8 @@ class resourcesViewController: UIViewController {
             let data = SchoologyDocSnapshot.data()
             let SchoologyName = data["Name"] as? String ?? ""
             let SchoologyLink = data["Link"] as? String ?? ""
-            print(SchoologyName)
-            print(SchoologyLink)
+            self.SchoologyButton.setTitle(SchoologyName, for: .normal)
+            self.link4 = SchoologyLink
 }
         docRef = Firestore.firestore().document("/Applications/qzDafLEHp5d3UqcCR7qa")
         docRef.getDocument { (DistrictEmailDocSnapshot, error) in
@@ -63,8 +72,8 @@ class resourcesViewController: UIViewController {
             let data = DistrictEmailDocSnapshot.data()
             let DistrictEmailName = data["Name"] as? String ?? ""
             let DistrictEmailLink = data["Link"] as? String ?? ""
-            print(DistrictEmailName)
-            print(DistrictEmailLink)
+            self.DistrictEmailButton.setTitle(DistrictEmailName, for: .normal)
+            self.link5 = DistrictEmailLink
 }
         docRef = Firestore.firestore().document("/Applications/tI5bL3RCSF7YhwNLilpv")
         docRef.getDocument { (InfiniteCampusDocSnapshot, error) in
@@ -72,8 +81,35 @@ class resourcesViewController: UIViewController {
             let data = InfiniteCampusDocSnapshot.data()
             let InfiniteCampusName = data["Name"] as? String ?? ""
             let InfiniteCampusLink = data["Link"] as? String ?? ""
-            print(InfiniteCampusName)
-            print(InfiniteCampusLink)
+            self.InfiniteCampusButton.setTitle(InfiniteCampusName, for: .normal)
+            self.link6 = InfiniteCampusLink
 }
 }
+    @IBAction func MoodlePressed(_ sender: UIButton) {
+        let svc = SFSafariViewController(url: NSURL(string: link1)! as URL)
+        self.present(svc, animated: true, completion: nil)
+    }
+    @IBAction func ParchmentPressed(_ sender: UIButton) {
+        let svc = SFSafariViewController(url: NSURL(string: link2)! as URL)
+        self.present(svc, animated: true, completion: nil)
+    }
+    @IBAction func NaviancePressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link3)! as URL)
+        self.present(svc, animated: true, completion: nil)
+    }
+    @IBAction func SchoologyPressed(_ sender: UIButton) {
+        let svc = SFSafariViewController(url: NSURL(string: link4)! as URL)
+        self.present(svc, animated: true, completion: nil)
+    }
+    @IBAction func DistrictEmailPressed(_ sender: UIButton) {
+        let svc = SFSafariViewController(url: NSURL(string: link5)! as URL)
+        self.present(svc, animated: true, completion: nil)
+
+    }
+    @IBAction func InfiniteCampusPressed(_ sender: UIButton) {
+        let svc = SFSafariViewController(url: NSURL(string: link6)! as URL)
+        self.present(svc, animated: true, completion: nil)
+
+    }
+    
 }
