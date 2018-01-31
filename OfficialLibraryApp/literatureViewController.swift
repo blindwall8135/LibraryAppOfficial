@@ -19,7 +19,10 @@ class literatureViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/Literature/Gb64WyC52iEPS9YQLocY")
         docRef.getDocument { (LitfinderDocSnapshot, error) in
-            guard let LitfinderDocSnapshot = LitfinderDocSnapshot, LitfinderDocSnapshot.exists else { return }
+            guard let LitfinderDocSnapshot = LitfinderDocSnapshot, LitfinderDocSnapshot.exists else {
+                self.LitfinderButton.isEnabled = false
+                self.LitfinderButton.isHidden = true
+                return }
             let data = LitfinderDocSnapshot.data()
             let LitfinderName = data["Name"] as? String ?? ""
             let LitfinderLink = data["Link"] as? String ?? ""
