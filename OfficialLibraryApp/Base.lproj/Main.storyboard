@@ -672,6 +672,9 @@
                                 <state key="normal" title="Link 1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="flipsterPressed:" destination="HDQ-3l-DQP" eventType="touchUpInside" id="4Jh-cD-sxp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cq8-nb-8RN">
                                 <rect key="frame" x="69" y="204" width="600" height="30"/>
@@ -680,6 +683,9 @@
                                 <state key="normal" title="Link 2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="correspondentLivePressed:" destination="HDQ-3l-DQP" eventType="touchUpInside" id="dfI-th-pBr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRy-Kd-dfe">
                                 <rect key="frame" x="69" y="264" width="600" height="30"/>
@@ -688,6 +694,9 @@
                                 <state key="normal" title="Link 3">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="axis360Pressed:" destination="HDQ-3l-DQP" eventType="touchUpInside" id="a7y-fB-r2v"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMF-F1-HfL">
                                 <rect key="frame" x="69" y="328" width="600" height="30"/>
@@ -696,6 +705,9 @@
                                 <state key="normal" title="Link 4">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="overDrivePressed:" destination="HDQ-3l-DQP" eventType="touchUpInside" id="Yos-E2-Plv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVd-2Q-nB3">
                                 <rect key="frame" x="69" y="376" width="600" height="30"/>
@@ -704,11 +716,21 @@
                                 <state key="normal" title="Link 5">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="CorrespondentPressed:" destination="HDQ-3l-DQP" eventType="touchUpInside" id="p4q-RM-kH5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="kk5-Ve-Wjo"/>
                     </view>
+                    <connections>
+                        <outlet property="CorrespondentButton" destination="UVd-2Q-nB3" id="ctT-2c-F4p"/>
+                        <outlet property="axis360Button" destination="oRy-Kd-dfe" id="IUn-Dh-EE9"/>
+                        <outlet property="correspondentLiveButton" destination="Cq8-nb-8RN" id="d1H-nR-WZn"/>
+                        <outlet property="flipsterButton" destination="Lfp-VG-g14" id="8tr-gx-rHy"/>
+                        <outlet property="overDriveButton" destination="eMF-F1-HfL" id="EHa-Bs-QC4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tBf-dr-W2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

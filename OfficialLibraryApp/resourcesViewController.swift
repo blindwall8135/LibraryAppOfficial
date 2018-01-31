@@ -30,7 +30,10 @@ class resourcesViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/Applications/4mrNKmzrIUInyUIGrCks")
         docRef.getDocument { (MoodleDocSnapshot, error) in
-            guard let MoodleDocSnapshot = MoodleDocSnapshot, MoodleDocSnapshot.exists else { return }
+            guard let MoodleDocSnapshot = MoodleDocSnapshot, MoodleDocSnapshot.exists else {
+                self.MoodleButton.isEnabled = false
+                self.MoodleButton.isHidden = true
+                return }
             let data = MoodleDocSnapshot.data()
             let MoodleName = data["Name"] as? String ?? ""
             let MoodleLink = data["Link"] as? String ?? ""
@@ -40,7 +43,10 @@ class resourcesViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/Applications/Pswyr9705C6Ces3twIHT")
         docRef.getDocument { (ParchmentDocSnapshot, error) in
-            guard let ParchmentDocSnapshot = ParchmentDocSnapshot, ParchmentDocSnapshot.exists else { return }
+            guard let ParchmentDocSnapshot = ParchmentDocSnapshot, ParchmentDocSnapshot.exists else {
+                self.TheParchmentButton.isEnabled = false
+                self.TheParchmentButton.isHidden = true
+                return }
             let data = ParchmentDocSnapshot.data()
             let ParchmentName = data["Name"] as? String ?? ""
             let ParchmentLink = data["Link"] as? String ?? ""
@@ -50,7 +56,10 @@ class resourcesViewController: UIViewController {
 }
         docRef = Firestore.firestore().document("/Applications/U1kWs8HAZCwjQti2Ptlv")
         docRef.getDocument { (NavianceDocSnapshot, error) in
-            guard let NavianceDocSnapshot = NavianceDocSnapshot, NavianceDocSnapshot.exists else { return }
+            guard let NavianceDocSnapshot = NavianceDocSnapshot, NavianceDocSnapshot.exists else {
+                self.NavianceButton.isEnabled = false
+                self.NavianceButton.isHidden = true
+                return }
             let data = NavianceDocSnapshot.data()
             let NavianceName = data["Name"] as? String ?? ""
             let NavianceLink = data["Link"] as? String ?? ""
@@ -59,7 +68,10 @@ class resourcesViewController: UIViewController {
 }
         docRef = Firestore.firestore().document("/Applications/qvuhYT5YFAIzg7hsSwjz")
         docRef.getDocument { (SchoologyDocSnapshot, error) in
-            guard let SchoologyDocSnapshot = SchoologyDocSnapshot, SchoologyDocSnapshot.exists else { return }
+            guard let SchoologyDocSnapshot = SchoologyDocSnapshot, SchoologyDocSnapshot.exists else {
+                self.SchoologyButton.isEnabled = false
+                self.SchoologyButton.isHidden = true
+                return }
             let data = SchoologyDocSnapshot.data()
             let SchoologyName = data["Name"] as? String ?? ""
             let SchoologyLink = data["Link"] as? String ?? ""
@@ -68,7 +80,10 @@ class resourcesViewController: UIViewController {
 }
         docRef = Firestore.firestore().document("/Applications/qzDafLEHp5d3UqcCR7qa")
         docRef.getDocument { (DistrictEmailDocSnapshot, error) in
-            guard let DistrictEmailDocSnapshot = DistrictEmailDocSnapshot, DistrictEmailDocSnapshot.exists else { return }
+            guard let DistrictEmailDocSnapshot = DistrictEmailDocSnapshot, DistrictEmailDocSnapshot.exists else {
+                self.DistrictEmailButton.isEnabled = false
+                self.DistrictEmailButton.isHidden = true
+                return }
             let data = DistrictEmailDocSnapshot.data()
             let DistrictEmailName = data["Name"] as? String ?? ""
             let DistrictEmailLink = data["Link"] as? String ?? ""
@@ -77,7 +92,10 @@ class resourcesViewController: UIViewController {
 }
         docRef = Firestore.firestore().document("/Applications/tI5bL3RCSF7YhwNLilpv")
         docRef.getDocument { (InfiniteCampusDocSnapshot, error) in
-            guard let InfiniteCampusDocSnapshot = InfiniteCampusDocSnapshot, InfiniteCampusDocSnapshot.exists else { return }
+            guard let InfiniteCampusDocSnapshot = InfiniteCampusDocSnapshot, InfiniteCampusDocSnapshot.exists else {
+                self.InfiniteCampusButton.isEnabled = false
+                self.InfiniteCampusButton.isHidden = true
+                return }
             let data = InfiniteCampusDocSnapshot.data()
             let InfiniteCampusName = data["Name"] as? String ?? ""
             let InfiniteCampusLink = data["Link"] as? String ?? ""

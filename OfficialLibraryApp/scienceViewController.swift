@@ -17,7 +17,7 @@ class scienceViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/Science Resources/2cVUs0RFdwVeOvsHdYiw")
         docRef.getDocument { (EndangeredSpeciesofNorthAmericaDocSnapshot, error) in
-            guard let EndangeredSpeciesofNorthAmericaDocSnapshot = EndangeredSpeciesofNorthAmericaDocSnapshot, EndangeredSpeciesofNorthAmericaDocSnapshot.exists else { return }
+            guard let EndangeredSpeciesofNorthAmericaDocSnapshot = EndangeredSpeciesofNorthAmericaDocSnapshot, EndangeredSpeciesofNorthAmericaDocSnapshot.exists else{ return }
             let data = EndangeredSpeciesofNorthAmericaDocSnapshot.data()
             let EndangeredSpeciesofNorthAmericaName = data["Name"] as? String ?? ""
             let EndangeredSpeciesofNorthAmericaLink = data["Link"] as? String ?? ""
