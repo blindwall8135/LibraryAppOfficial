@@ -8,9 +8,10 @@
 
 import UIKit
 import Firebase
-
+import SafariServices
 class literatureViewController: UIViewController {
 
+    var link1 =  String()
     var docRef : DocumentReference!
     @IBOutlet weak var LitfinderButton: UIButton!
     override func viewDidLoad() {
@@ -22,14 +23,14 @@ class literatureViewController: UIViewController {
             let data = LitfinderDocSnapshot.data()
             let LitfinderName = data["Name"] as? String ?? ""
             let LitfinderLink = data["Link"] as? String ?? ""
-            print(LitfinderName)
-            print(LitfinderLink)
-            
-            
-            
+            self.LitfinderButton.setTitle(LitfinderName, for: .normal)
+            self.link1 = LitfinderLink
         }
 
 }
     @IBAction func LitfinderPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link1)! as URL)
+        self.present(svc, animated: true, completion: nil)
+
     }
 }
