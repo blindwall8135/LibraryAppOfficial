@@ -19,7 +19,10 @@ class autosViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/All Data Pro/w8Fw5cE6iPUgpDuG8Kcm")
         docRef.getDocument { (allDataProDocSnapshot, error) in
-            guard let allDataProDocSnapshot = allDataProDocSnapshot, allDataProDocSnapshot.exists else { return }
+            guard let allDataProDocSnapshot = allDataProDocSnapshot, allDataProDocSnapshot.exists else {
+                self.allDataProButton.isEnabled = false
+                self.allDataProButton.isHidden = true
+                return }
             let data = allDataProDocSnapshot.data()
             let allDataProName = data["Name"] as? String ?? ""
             let allDataProLink = data["Link"] as? String ?? ""
