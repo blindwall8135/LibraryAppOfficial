@@ -40,7 +40,10 @@ class socialScienceViewController: UIViewController {
         super.viewDidLoad()
         docRef = Firestore.firestore().document("/Social Science/544Ba9ux7xcwD3xpJ7qH")
         docRef.getDocument { (geoWorldDocSnapshot, error) in
-            guard let geoWorldDocSnapshot = geoWorldDocSnapshot, geoWorldDocSnapshot.exists else { return }
+            guard let geoWorldDocSnapshot = geoWorldDocSnapshot, geoWorldDocSnapshot.exists else {
+                self.geographyWorldButton.isEnabled = false
+                self.geographyWorldButton.isHidden = true
+                return }
             let data = geoWorldDocSnapshot.data()
             let geoWorldName = data["Name"] as? String ?? ""
             let geoWorldLink = data["Link"] as? String ?? ""
@@ -49,7 +52,10 @@ class socialScienceViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Social Science/AlW66gajTYYwiFXTdmVK")
         docRef.getDocument { (geoUSDocSnapshot, error) in
-            guard let geoUSDocSnapshot = geoUSDocSnapshot, geoUSDocSnapshot.exists else { return }
+            guard let geoUSDocSnapshot = geoUSDocSnapshot, geoUSDocSnapshot.exists else {
+                self.geographyUSButton.isEnabled = false
+                self.geographyUSButton.isHidden = true
+                return }
             let data = geoUSDocSnapshot.data()
             let geoUSName = data["Name"] as? String ?? ""
             let geoUSLink = data["Link"] as? String ?? ""
@@ -58,7 +64,10 @@ class socialScienceViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Social Science/QWDK6szLNdsQ82QloMpx")
         docRef.getDocument { (americanGovernmentDocSnapshot, error) in
-            guard let americanGovernmentDocSnapshot = americanGovernmentDocSnapshot, americanGovernmentDocSnapshot.exists else { return }
+            guard let americanGovernmentDocSnapshot = americanGovernmentDocSnapshot, americanGovernmentDocSnapshot.exists else {
+                self.americanGovernmentButton.isEnabled = false
+                self.americanGovernmentButton.isHidden = true
+                return }
             let data = americanGovernmentDocSnapshot.data()
             let americanGovernmentName = data["Name"] as? String ?? ""
             let americanGovernmentLink = data["Link"] as? String ?? ""
@@ -67,7 +76,10 @@ class socialScienceViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Social Science/RXS1Fz4bPqG9Gdb29tcn")
         docRef.getDocument { (aBCCICLODocSnapshot, error) in
-            guard let aBCCICLODocSnapshot = aBCCICLODocSnapshot, aBCCICLODocSnapshot.exists else { return }
+            guard let aBCCICLODocSnapshot = aBCCICLODocSnapshot, aBCCICLODocSnapshot.exists else {
+                self.aBCCICLOButton.isEnabled = false
+                self.aBCCICLOButton.isHidden = true
+                return }
             let data = aBCCICLODocSnapshot.data()
             let aBCCICLOName = data["Name"] as? String ?? ""
             let aBCCICLOLink = data["Link"] as? String ?? ""
@@ -76,7 +88,10 @@ class socialScienceViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Social Science/SBsmmTcPCwx4moSGlBW4")
         docRef.getDocument { (wHModernDocSnapshot, error) in
-            guard let wHModernDocSnapshot = wHModernDocSnapshot, wHModernDocSnapshot.exists else { return }
+            guard let wHModernDocSnapshot = wHModernDocSnapshot, wHModernDocSnapshot.exists else {
+                self.worldHistoryModernButton.isEnabled = false
+                self.worldHistoryModernButton.isHidden = true
+                return }
             let data = wHModernDocSnapshot.data()
             let wHModernName = data["Name"] as? String ?? ""
             let wHModernLink = data["Link"] as? String ?? ""
@@ -85,7 +100,10 @@ class socialScienceViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Social Science/SxNGZ03khMhhZQRZwCF1")
         docRef.getDocument { (dailyLifeDocSnapshot, error) in
-            guard let dailyLifeDocSnapshot = dailyLifeDocSnapshot, dailyLifeDocSnapshot.exists else { return }
+            guard let dailyLifeDocSnapshot = dailyLifeDocSnapshot, dailyLifeDocSnapshot.exists else {
+                self.dailyLifeThroughoutHistoryButton.isEnabled = false
+                self.dailyLifeThroughoutHistoryButton.isHidden = true
+                return }
             let data = dailyLifeDocSnapshot.data()
             let dailyLifeName = data["Name"] as? String ?? ""
             let dailyLifeLink = data["Link"] as? String ?? ""
@@ -94,7 +112,10 @@ class socialScienceViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Social Science/U0QbF8d36yhmlybJYofK")
         docRef.getDocument { (wHAncientDocSnapshot, error) in
-            guard let wHAncientDocSnapshot = wHAncientDocSnapshot, wHAncientDocSnapshot.exists else { return }
+            guard let wHAncientDocSnapshot = wHAncientDocSnapshot, wHAncientDocSnapshot.exists else {
+                self.worldHistoryAncientButton.isEnabled = false
+                self.worldHistoryAncientButton.isHidden = true
+                return }
             let data = wHAncientDocSnapshot.data()
             let wHAncientName = data["Name"] as? String ?? ""
             let wHAncientLink = data["Link"] as? String ?? ""
@@ -103,7 +124,10 @@ class socialScienceViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Social Science/WbH6VhJMbU7jJaUsA6pQ")
         docRef.getDocument { (countryReportsDocSnapshot, error) in
-            guard let countryReportsDocSnapshot = countryReportsDocSnapshot, countryReportsDocSnapshot.exists else { return }
+            guard let countryReportsDocSnapshot = countryReportsDocSnapshot, countryReportsDocSnapshot.exists else {
+                self.countryReportsButton.isEnabled = false
+                self.countryReportsButton.isHidden = true
+                return }
             let data = countryReportsDocSnapshot.data()
             let countryReportsName = data["Name"] as? String ?? ""
             let countryReportsLink = data["Link"] as? String ?? ""
@@ -112,7 +136,10 @@ class socialScienceViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Social Science/wFio4nRkY9PCfFLsyeXp")
         docRef.getDocument { (americanHistoryDocSnapshot, error) in
-            guard let americanHistoryDocSnapshot = americanHistoryDocSnapshot, americanHistoryDocSnapshot.exists else { return }
+            guard let americanHistoryDocSnapshot = americanHistoryDocSnapshot, americanHistoryDocSnapshot.exists else {
+                self.americanHistoryButton.isEnabled = false
+                self.americanHistoryButton.isHidden = true
+                return }
             let data = americanHistoryDocSnapshot.data()
             let americanHistoryName = data["Name"] as? String ?? ""
             let americanHistoryLink = data["Link"] as? String ?? ""
@@ -121,7 +148,10 @@ class socialScienceViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Social Science/y5JeK6ym78sV55rluXS0")
         docRef.getDocument { (studentResourceinContextDocSnapshot, error) in
-            guard let studentResourceinContextDocSnapshot = studentResourceinContextDocSnapshot, studentResourceinContextDocSnapshot.exists else { return }
+            guard let studentResourceinContextDocSnapshot = studentResourceinContextDocSnapshot, studentResourceinContextDocSnapshot.exists else {
+                self.studentResourcesInContextButton.isEnabled = false
+                self.studentResourcesInContextButton.isHidden = true
+                return }
             let data = studentResourceinContextDocSnapshot.data()
             let studentResourceinContextName = data["Name"] as? String ?? ""
             let studentResourceinContextLink = data["Link"] as? String ?? ""
@@ -130,7 +160,10 @@ class socialScienceViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Social Science/z3WyBQ4ojeWipCyfzYAm")
         docRef.getDocument { (globalIssuesinContextDocSnapshot, error) in
-            guard let globalIssuesinContextDocSnapshot = globalIssuesinContextDocSnapshot, globalIssuesinContextDocSnapshot.exists else { return }
+            guard let globalIssuesinContextDocSnapshot = globalIssuesinContextDocSnapshot, globalIssuesinContextDocSnapshot.exists else {
+                self.globalIssuesInContextButton.isEnabled = false
+                self.globalIssuesInContextButton.isHidden = true
+                return }
             let data = globalIssuesinContextDocSnapshot.data()
             let globalIssuesinContextName = data["Name"] as? String ?? ""
             let globalIssuesinContextLink = data["Link"] as? String ?? ""

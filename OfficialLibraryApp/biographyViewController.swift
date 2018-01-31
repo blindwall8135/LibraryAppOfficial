@@ -27,7 +27,10 @@ class biographyViewController: UIViewController {
         super.viewDidLoad()
         docRef = Firestore.firestore().document("/Biography in Context/0ReyRdGIexFqB2BbIihT")
         docRef.getDocument { (MitchCourseWebsiteDocSnapshot, error) in
-            guard let MitchCourseWebsiteDocSnapshot = MitchCourseWebsiteDocSnapshot, MitchCourseWebsiteDocSnapshot.exists else { return }
+            guard let MitchCourseWebsiteDocSnapshot = MitchCourseWebsiteDocSnapshot, MitchCourseWebsiteDocSnapshot.exists else {
+                self.MitchCourseWebsite.isEnabled = false
+                self.MitchCourseWebsite.isHidden = true
+                return }
             let data = MitchCourseWebsiteDocSnapshot.data()
             let MitchCourseWebsiteName = data["Name"] as? String ?? ""
             let MitchCourseWebsiteLink = data["Link"] as? String ?? ""
@@ -37,7 +40,10 @@ class biographyViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Biography in Context/EmX2O5CkFdSzfTcyGCn3")
         docRef.getDocument { (GeneticScienceLearningCenterDocSnapshot, error) in
-            guard let GeneticScienceLearningCenterDocSnapshot = GeneticScienceLearningCenterDocSnapshot, GeneticScienceLearningCenterDocSnapshot.exists else { return }
+            guard let GeneticScienceLearningCenterDocSnapshot = GeneticScienceLearningCenterDocSnapshot, GeneticScienceLearningCenterDocSnapshot.exists else {
+                self.GeneticScienceLearningCenter.isEnabled = false
+                self.GeneticScienceLearningCenter.isHidden = true
+                return }
             let data = GeneticScienceLearningCenterDocSnapshot.data()
             let GeneticScienceLearningCenterName = data["Name"] as? String ?? ""
             let GeneticScienceLearningCenterLink = data["Link"] as? String ?? ""
@@ -47,7 +53,10 @@ class biographyViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Biography in Context/LnsGoBujTRDJDb7HjbM6")
         docRef.getDocument { (BiographyInContextCenterDocSnapshot, error) in
-            guard let BiographyInContextCenterDocSnapshot = BiographyInContextCenterDocSnapshot, BiographyInContextCenterDocSnapshot.exists else { return }
+            guard let BiographyInContextCenterDocSnapshot = BiographyInContextCenterDocSnapshot, BiographyInContextCenterDocSnapshot.exists else {
+                self.BiograghyInContext.isEnabled = false
+                self.BiograghyInContext.isHidden = true
+                return }
             let data = BiographyInContextCenterDocSnapshot.data()
             let BiographyInContextCenterName = data["Name"] as? String ?? ""
             let BiographyInContextCenterLink = data["Link"] as? String ?? ""
@@ -57,7 +66,10 @@ class biographyViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Biography in Context/qOxMphl2cfaNRPrdiYl1")
         docRef.getDocument { (HHMIBiointeractiveDocSnapshot, error) in
-            guard let HHMIBiointeractiveDocSnapshot = HHMIBiointeractiveDocSnapshot, HHMIBiointeractiveDocSnapshot.exists else { return }
+            guard let HHMIBiointeractiveDocSnapshot = HHMIBiointeractiveDocSnapshot, HHMIBiointeractiveDocSnapshot.exists else {
+                self.HHMIBiointeractive.isEnabled = false
+                self.HHMIBiointeractive.isHidden = true
+                return }
             let data = HHMIBiointeractiveDocSnapshot.data()
             let HHMIBiointeractiveName = data["Name"] as? String ?? ""
             let HHMIBiointeractiveLink = data["Link"] as? String ?? ""

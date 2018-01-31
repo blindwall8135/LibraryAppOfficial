@@ -18,7 +18,10 @@ class mathViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/Math Resources/rnAnHt1DcxcTxxVTzA66")
         docRef.getDocument { (WolframAlphaDocSnapshot, error) in
-            guard let WolframAlphaDocSnapshot = WolframAlphaDocSnapshot, WolframAlphaDocSnapshot.exists else { return }
+            guard let WolframAlphaDocSnapshot = WolframAlphaDocSnapshot, WolframAlphaDocSnapshot.exists else {
+                self.WolframAlpha.isEnabled = false
+                self.WolframAlpha.isHidden = true
+                return }
             let data = WolframAlphaDocSnapshot.data()
             let WolframAlphaName = data["Name"] as? String ?? ""
             let WolframAlphaLink = data["Link"] as? String ?? ""
