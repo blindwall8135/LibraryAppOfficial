@@ -554,11 +554,17 @@
                                 <state key="normal" title="Link 1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="LitfinderPressed:" destination="dGa-2M-vdZ" eventType="touchUpInside" id="5kF-aD-Pbf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="sRG-CA-4pc"/>
                     </view>
+                    <connections>
+                        <outlet property="LitfinderButton" destination="7Qf-gR-WEE" id="3b9-uJ-UUP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lr4-Q6-bpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

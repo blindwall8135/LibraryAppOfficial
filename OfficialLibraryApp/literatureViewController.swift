@@ -12,6 +12,7 @@ import Firebase
 class literatureViewController: UIViewController {
 
     var docRef : DocumentReference!
+    @IBOutlet weak var LitfinderButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,4 +30,6 @@ class literatureViewController: UIViewController {
         }
 
 }
+    @IBAction func LitfinderPressed(_ sender: Any) {
+    }
 }
