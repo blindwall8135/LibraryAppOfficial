@@ -8,9 +8,11 @@
 
 import UIKit
 import Firebase
-
+import SafariServices
 class mathViewController: UIViewController {
     var docRef : DocumentReference!
+    var link1 = String()
+    @IBOutlet weak var WolframAlpha: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,8 +22,8 @@ class mathViewController: UIViewController {
             let data = WolframAlphaDocSnapshot.data()
             let WolframAlphaName = data["Name"] as? String ?? ""
             let WolframAlphaLink = data["Link"] as? String ?? ""
-            print(WolframAlphaName)
-            print(WolframAlphaLink)
+            self.WolframAlpha.setTitle(WolframAlphaName, for: .normal)
+            self.link1 = WolframAlphaLink
 
 
         
@@ -29,4 +31,8 @@ class mathViewController: UIViewController {
 
 
 }
+    @IBAction func WolframAlphaPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link1)! as URL)
+        self.present(svc, animated: true, completion: nil)
+    }
 }
