@@ -1497,11 +1497,17 @@
                                 <state key="normal" title="Link 1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="WolframAlphaPressed:" destination="EzF-WS-LzM" eventType="touchUpInside" id="pDY-te-rUi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="onc-Ti-4De"/>
                     </view>
+                    <connections>
+                        <outlet property="WolframAlpha" destination="Ecw-nb-f6r" id="dKR-3s-u6V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Chn-ZA-sw8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
