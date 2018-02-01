@@ -596,6 +596,9 @@
                                 <state key="normal" title="Link 1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="EndangeredSpeciesofNorthAmericaPressed:" destination="pau-Ec-DT7" eventType="touchUpInside" id="EUr-0U-ePd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FA7-Aq-wqM">
                                 <rect key="frame" x="69" y="204" width="600" height="30"/>
@@ -604,6 +607,9 @@
                                 <state key="normal" title="Link 2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="GrzimeksAnimalLifeEncyclopediaPressed:" destination="pau-Ec-DT7" eventType="touchUpInside" id="QEH-OL-MZ1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfc-GG-ALw">
                                 <rect key="frame" x="69" y="264" width="600" height="30"/>
@@ -612,6 +618,9 @@
                                 <state key="normal" title="Link 3">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="HealthSourceConsumerPressed:" destination="pau-Ec-DT7" eventType="touchUpInside" id="E18-Z8-Ldd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSM-uB-RrJ">
                                 <rect key="frame" x="69" y="328" width="600" height="30"/>
@@ -620,6 +629,9 @@
                                 <state key="normal" title="Link 4">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="ScienceinContextPressed:" destination="pau-Ec-DT7" eventType="touchUpInside" id="BrI-xC-b23"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSz-F4-nn5">
                                 <rect key="frame" x="69" y="376" width="600" height="30"/>
@@ -628,6 +640,9 @@
                                 <state key="normal" title="Link 5">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="TeenHealthandWellnessPressed:" destination="pau-Ec-DT7" eventType="touchUpInside" id="p2V-w0-Lvq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L80-Ta-aE3">
                                 <rect key="frame" x="69" y="432" width="600" height="30"/>
@@ -636,11 +651,22 @@
                                 <state key="normal" title="Link 6">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="DrugsAlcoholandAddictiveBehaviorPressed:" destination="pau-Ec-DT7" eventType="touchUpInside" id="jTD-UF-9vF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="MzV-Xy-pcg"/>
                     </view>
+                    <connections>
+                        <outlet property="DrugsAlcoholandAddictiveBehaviorButton" destination="L80-Ta-aE3" id="eDx-5R-Uue"/>
+                        <outlet property="EndangeredSpeciesofNorthAmericaButton" destination="85J-3T-A8s" id="JJ1-1S-tGh"/>
+                        <outlet property="GrzimeksAnimalLifeEncyclopediaButton" destination="FA7-Aq-wqM" id="km9-a0-tKq"/>
+                        <outlet property="HealthSourceConsumerButton" destination="qfc-GG-ALw" id="Zgv-vy-wNJ"/>
+                        <outlet property="ScienceinContextButton" destination="NSM-uB-RrJ" id="fbX-sL-J7f"/>
+                        <outlet property="TeenHealthandWellnessButton" destination="SSz-F4-nn5" id="YWG-ID-mfE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZ9-Go-dx1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

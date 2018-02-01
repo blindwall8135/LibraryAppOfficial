@@ -20,7 +20,10 @@ class collegeViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/College and Career/Mp4Fw99kBNchbOGKAkmi")
         docRef.getDocument { (CareerCruisingDocSnapshot, error) in
-            guard let CareerCruisingDocSnapshot = CareerCruisingDocSnapshot, CareerCruisingDocSnapshot.exists else { return }
+            guard let CareerCruisingDocSnapshot = CareerCruisingDocSnapshot, CareerCruisingDocSnapshot.exists else {
+                self.careerCruisingButton.isEnabled = false
+                self.careerCruisingButton.isHidden = true
+                return }
             let data = CareerCruisingDocSnapshot.data()
             let CareerCruisingName = data["Name"] as? String ?? ""
             let CareerCruisingLink = data["Link"] as? String ?? ""
