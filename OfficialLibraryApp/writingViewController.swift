@@ -12,6 +12,10 @@ import SafariServices
 class writingViewController: UIViewController {
         
         var docRef : DocumentReference!
+    var link1 = String()
+    var link2 = String()
+    var link3 = String()
+    var link4 = String()
     
     @IBOutlet weak var thesisStatementsButton: UIButton!
     @IBOutlet weak var OWLPerdueDocButton: UIButton!
@@ -27,8 +31,8 @@ class writingViewController: UIViewController {
                 let data = thesisStatementsDocSnapshot.data()
                 let thesisStatementsName = data["Name"] as? String ?? ""
                 let thesisStatementsLink = data["Link"] as? String ?? ""
-                print(thesisStatementsName)
-                print(thesisStatementsLink)
+                self.thesisStatementsButton.setTitle(thesisStatementsName, for: .normal)
+                self.link1 = thesisStatementsLink
             }
             
                 docRef = Firestore.firestore().document("/Writing/rp4mmxKp5yuutuDm6gKs")
@@ -37,8 +41,8 @@ class writingViewController: UIViewController {
                     let data = OWLPerdueDocSnapshot.data()
                     let OWLPerdueName = data["Name"] as? String ?? ""
                     let OWLPerdueLink = data["Link"] as? String ?? ""
-                    print(OWLPerdueName)
-                    print(OWLPerdueLink)
+                    self.OWLPerdueDocButton.setTitle(OWLPerdueName, for: .normal)
+                    self.link2 = OWLPerdueLink
             }
             
             docRef = Firestore.firestore().document("/Writing/vGY7I86syK7y4ComXDi0")
@@ -47,8 +51,8 @@ class writingViewController: UIViewController {
                 let data = easyBibDocSnapshot.data()
                 let easyBibName = data["Name"] as? String ?? ""
                 let easyBibLink = data["Link"] as? String ?? ""
-                print(easyBibName)
-                print(easyBibLink)
+                self.easyBibButton.setTitle(easyBibName, for: .normal)
+                self.link3 = easyBibLink
 
             
     }
@@ -58,8 +62,8 @@ class writingViewController: UIViewController {
                 let data = MELConWritingDocSnapshot.data()
                 let MELConWritingName = data["Name"] as? String ?? ""
                 let MELConWritingLink = data["Link"] as? String ?? ""
-                print(MELConWritingName)
-                print(MELConWritingLink)
+                self.MELConWritingButton.setTitle(MELConWritingName, for: .normal)
+                self.link4 = MELConWritingLink
             
     
 
@@ -68,12 +72,20 @@ class writingViewController: UIViewController {
     
 }
     @IBAction func thesisStatementsPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link1)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
     
     @IBAction func OWLPerduePressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link2)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
     @IBAction func easyBibPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link3)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
     @IBAction func MELConWritingPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: NSURL(string: link4)! as URL)
+        self.present(svc, animated: true, completion: nil)
     }
 }
