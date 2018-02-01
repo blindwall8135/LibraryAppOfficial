@@ -8,9 +8,16 @@
 
 import UIKit
 import Firebase
+import SafariServices
 class scienceViewController: UIViewController {
 
     var docRef : DocumentReference!
+    var link1 = String()
+    var link2 = String()
+    var link3 = String()
+    var link4 = String()
+    var link5 = String()
+    var link6 = String()
     @IBOutlet weak var EndangeredSpeciesofNorthAmericaButton: UIButton!
     @IBOutlet weak var GrzimeksAnimalLifeEncyclopediaButton: UIButton!
     @IBOutlet weak var HealthSourceConsumerButton: UIButton!
@@ -27,8 +34,8 @@ class scienceViewController: UIViewController {
             let data = EndangeredSpeciesofNorthAmericaDocSnapshot.data()
             let EndangeredSpeciesofNorthAmericaName = data["Name"] as? String ?? ""
             let EndangeredSpeciesofNorthAmericaLink = data["Link"] as? String ?? ""
-            print(EndangeredSpeciesofNorthAmericaName)
-            print(EndangeredSpeciesofNorthAmericaLink)
+            self.EndangeredSpeciesofNorthAmericaButton.setTitle(EndangeredSpeciesofNorthAmericaName, for: .normal)
+            self.link1 = EndangeredSpeciesofNorthAmericaLink
         }
         
         docRef = Firestore.firestore().document("/Science Resources/6bbKOQfDfmcd7AUPW3ui")
@@ -37,8 +44,8 @@ class scienceViewController: UIViewController {
             let data = GrzimeksAnimalLifeEncyclopediaDocSnapshot.data()
             let GrzimeksAnimalLifeEncyclopediaName = data["Name"] as? String ?? ""
             let GrzimeksAnimalLifeEncyclopediaLink = data["Link"] as? String ?? ""
-            print(GrzimeksAnimalLifeEncyclopediaName)
-            print(GrzimeksAnimalLifeEncyclopediaLink)
+            self.GrzimeksAnimalLifeEncyclopediaButton.setTitle(GrzimeksAnimalLifeEncyclopediaName, for: .normal)
+            self.link2 = GrzimeksAnimalLifeEncyclopediaLink
         }
 
         
@@ -48,8 +55,8 @@ class scienceViewController: UIViewController {
             let data = HealthSourceConsumerDocSnapshot.data()
             let HealthSourceConsumerName = data["Name"] as? String ?? ""
             let HealthSourceConsumerLink = data["Link"] as? String ?? ""
-            print(HealthSourceConsumerName)
-            print(HealthSourceConsumerLink)
+            self.HealthSourceConsumerButton.setTitle(HealthSourceConsumerName, for: .normal)
+            self.link3 = HealthSourceConsumerLink
         }
 
         docRef = Firestore.firestore().document("/Science Resources/VMv90NZAYGh2ZJAtDO5E")
@@ -58,8 +65,8 @@ class scienceViewController: UIViewController {
             let data = ScienceinContextDocSnapshot.data()
             let ScienceinContextName = data["Name"] as? String ?? ""
             let ScienceinContextLink = data["Link"] as? String ?? ""
-            print(ScienceinContextName)
-            print(ScienceinContextLink)
+            self.ScienceinContextButton.setTitle(ScienceinContextName, for: .normal)
+            self.link4 = ScienceinContextLink
         }
         
         docRef = Firestore.firestore().document("/Science Resources/dR8RKfu92xBRq93Rs4Mp")
@@ -68,8 +75,8 @@ class scienceViewController: UIViewController {
             let data = TeenHealthandWellnessDocSnapshot.data()
             let TeenHealthandWellnessName = data["Name"] as? String ?? ""
             let TeenHealthandWellnessLink = data["Link"] as? String ?? ""
-            print(TeenHealthandWellnessName)
-            print(TeenHealthandWellnessLink)
+            self.TeenHealthandWellnessButton.setTitle(TeenHealthandWellnessName, for: .normal)
+            self.link5 = TeenHealthandWellnessLink
         }
         
         docRef = Firestore.firestore().document("/Science Resources/es6kZRPRToE8yzYS0jJm")
@@ -78,9 +85,8 @@ class scienceViewController: UIViewController {
             let data = DrugsAlcoholandAddictiveBehaviorDocSnapshot.data()
             let DrugsAlcoholandAddictiveBehaviorName = data["Name"] as? String ?? ""
             let DrugsAlcoholandAddictiveBehaviorLink = data["Link"] as? String ?? ""
-            print(DrugsAlcoholandAddictiveBehaviorName)
-            print(DrugsAlcoholandAddictiveBehaviorLink)
-        }
+            self.DrugsAlcoholandAddictiveBehaviorButton.setTitle(DrugsAlcoholandAddictiveBehaviorName, for: .normal)
+            self.link6 = DrugsAlcoholandAddictiveBehaviorLink        }
 }
     @IBAction func EndangeredSpeciesofNorthAmericaPressed(_ sender: Any) {
     }
