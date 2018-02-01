@@ -27,7 +27,10 @@ class encyclopediaViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/Encyclopedias/D3vTKKcd83gS8i5vcOyJ")
         docRef.getDocument { (EncyclopediaofModernAsiaDocSnapshot, error) in
-            guard let EncyclopediaofModernAsiaDocSnapshot = EncyclopediaofModernAsiaDocSnapshot, EncyclopediaofModernAsiaDocSnapshot.exists else { return }
+            guard let EncyclopediaofModernAsiaDocSnapshot = EncyclopediaofModernAsiaDocSnapshot, EncyclopediaofModernAsiaDocSnapshot.exists else {
+                self.EncyclopediaofModernAsiaButton.isEnabled = false
+                self.EncyclopediaofModernAsiaButton.isHidden = true
+                return }
             let data = EncyclopediaofModernAsiaDocSnapshot.data()
             let EncyclopediaofModernAsiaName = data["Name"] as? String ?? ""
             let EncyclopediaofModernAsiaLink = data["Link"] as? String ?? ""
@@ -38,7 +41,10 @@ class encyclopediaViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/Encyclopedias/JHpSCqEQ7PQkir8glhxt")
         docRef.getDocument { (WorldBookEncyclopediaDocSnapshot, error) in
-            guard let WorldBookEncyclopediaDocSnapshot = WorldBookEncyclopediaDocSnapshot, WorldBookEncyclopediaDocSnapshot.exists else { return }
+            guard let WorldBookEncyclopediaDocSnapshot = WorldBookEncyclopediaDocSnapshot, WorldBookEncyclopediaDocSnapshot.exists else {
+                self.WorldBookEncyclopediaButton.isEnabled = false
+                self.WorldBookEncyclopediaButton.isHidden = true
+                return }
             let data = WorldBookEncyclopediaDocSnapshot.data()
             let WorldBookEncyclopediaName = data["Name"] as? String ?? ""
             let WorldBookEncyclopediaLink = data["Link"] as? String ?? ""
@@ -49,7 +55,10 @@ class encyclopediaViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/Encyclopedias/V3qt5ZsnHuXjw78meFIq")
         docRef.getDocument { (EncyclopediaofWorldCitiesDocSnapshot, error) in
-            guard let EncyclopediaofWorldCitiesDocSnapshot = EncyclopediaofWorldCitiesDocSnapshot, EncyclopediaofWorldCitiesDocSnapshot.exists else { return }
+            guard let EncyclopediaofWorldCitiesDocSnapshot = EncyclopediaofWorldCitiesDocSnapshot, EncyclopediaofWorldCitiesDocSnapshot.exists else {
+                self.EncyclopediaofWorldCitiesButton.isEnabled = false
+                self.EncyclopediaofWorldCitiesButton.isHidden = true
+                return }
             let data = EncyclopediaofWorldCitiesDocSnapshot.data()
             let EncyclopediaofWorldCitiesName = data["Name"] as? String ?? ""
             let EncyclopediaofWorldCitiesLink = data["Link"] as? String ?? ""
@@ -60,7 +69,10 @@ class encyclopediaViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/Encyclopedias/Y7WEFM12lQUwB6yfIepb")
         docRef.getDocument { (EncyclopediaofFoodandCultureDocSnapshot, error) in
-            guard let EncyclopediaofFoodandCultureDocSnapshot = EncyclopediaofFoodandCultureDocSnapshot, EncyclopediaofFoodandCultureDocSnapshot.exists else { return }
+            guard let EncyclopediaofFoodandCultureDocSnapshot = EncyclopediaofFoodandCultureDocSnapshot, EncyclopediaofFoodandCultureDocSnapshot.exists else {
+                self.EncyclopediaofFoodandCultureButton.isEnabled = false
+                self.EncyclopediaofFoodandCultureButton.isHidden = true
+                return }
             let data = EncyclopediaofFoodandCultureDocSnapshot.data()
             let EncyclopediaofFoodandCultureName = data["Name"] as? String ?? ""
             let EncyclopediaofFoodandCultureLink = data["Link"] as? String ?? ""
@@ -71,7 +83,10 @@ self.EncyclopediaofFoodandCultureButton.setTitle(EncyclopediaofFoodandCultureNam
         
         docRef = Firestore.firestore().document("/Encyclopedias/qaYNkLjYGKYbMxYfohSJ")
         docRef.getDocument { (EncyclopediaofModernMiddleEastNorthAfricaDocSnapshot, error) in
-            guard let EncyclopediaofModernMiddleEastNorthAfricaDocSnapshot = EncyclopediaofModernMiddleEastNorthAfricaDocSnapshot, EncyclopediaofModernMiddleEastNorthAfricaDocSnapshot.exists else { return }
+            guard let EncyclopediaofModernMiddleEastNorthAfricaDocSnapshot = EncyclopediaofModernMiddleEastNorthAfricaDocSnapshot, EncyclopediaofModernMiddleEastNorthAfricaDocSnapshot.exists else {
+                self.EncyclopediaofModernMiddleEastNorthAfricaButton.isEnabled = false
+                self.EncyclopediaofModernMiddleEastNorthAfricaButton.isHidden = true
+                return }
             let data = EncyclopediaofModernMiddleEastNorthAfricaDocSnapshot.data()
             let EncyclopediaofModernMiddleEastNorthAfricaName = data["Name"] as? String ?? ""
             let EncyclopediaofModernMiddleEastNorthAfricaLink = data["Link"] as? String ?? ""

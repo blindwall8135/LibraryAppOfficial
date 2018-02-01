@@ -26,7 +26,10 @@ class databaseNewspapersViewController: UIViewController {
         super.viewDidLoad()
         docRef = Firestore.firestore().document("/Database Newspapers/98Aie9050IZFwkQ4XhnQ")
         docRef.getDocument { (newspaperSourcePlusDocSnapshot, error) in
-            guard let newspaperSourcePlusDocSnapshot = newspaperSourcePlusDocSnapshot, newspaperSourcePlusDocSnapshot.exists else { return }
+            guard let newspaperSourcePlusDocSnapshot = newspaperSourcePlusDocSnapshot, newspaperSourcePlusDocSnapshot.exists else {
+                self.newspaperSourcePlus.isEnabled = false
+                self.newspaperSourcePlus.isHidden = true
+                return }
             let data = newspaperSourcePlusDocSnapshot.data()
             let newspaperSourcePlusName = data["Name"] as? String ?? ""
             let newspaperSourcePlusLink = data["Link"] as? String ?? ""
@@ -35,7 +38,10 @@ class databaseNewspapersViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Database Newspapers/Dyfmrqa27CSYBTbgntge")
         docRef.getDocument { (aPNewsDocSnapshot, error) in
-            guard let aPNewsDocSnapshot = aPNewsDocSnapshot, aPNewsDocSnapshot.exists else { return }
+            guard let aPNewsDocSnapshot = aPNewsDocSnapshot, aPNewsDocSnapshot.exists else{
+                self.aPNews.isEnabled = false
+                self.aPNews.isHidden = true
+                return }
             let data = aPNewsDocSnapshot.data()
             let aPNewsName = data["Name"] as? String ?? ""
             let aPNewsLink = data["Link"] as? String ?? ""
@@ -44,7 +50,10 @@ class databaseNewspapersViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Database Newspapers/DzdwJG5SaKHKaOjtORfm")
         docRef.getDocument { (newspaperSourceDocSnapshot, error) in
-            guard let newspaperSourceDocSnapshot = newspaperSourceDocSnapshot, newspaperSourceDocSnapshot.exists else { return }
+            guard let newspaperSourceDocSnapshot = newspaperSourceDocSnapshot, newspaperSourceDocSnapshot.exists else {
+                self.newspaperSource.isEnabled = false
+                self.newspaperSource.isHidden = true
+                return }
             let data = newspaperSourceDocSnapshot.data()
             let newspaperSourceName = data["Name"] as? String ?? ""
             let newspaperSourceLink = data["Link"] as? String ?? ""
@@ -53,7 +62,10 @@ class databaseNewspapersViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Database Newspapers/ob6HlcVj5QUhcghwoCq8")
         docRef.getDocument { (webNewsDocSnapshot, error) in
-            guard let webNewsDocSnapshot = webNewsDocSnapshot, webNewsDocSnapshot.exists else { return }
+            guard let webNewsDocSnapshot = webNewsDocSnapshot, webNewsDocSnapshot.exists else {
+                self.webNews.isEnabled = false
+                self.webNews.isHidden = true
+                return }
             let data = webNewsDocSnapshot.data()
             let webNewsName = data["Name"] as? String ?? ""
             let webNewsLink = data["Link"] as? String ?? ""
