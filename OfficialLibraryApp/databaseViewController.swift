@@ -42,7 +42,10 @@ class databaseViewController: UIViewController {
         super.viewDidLoad()
         docRef = Firestore.firestore().document("/Database Magazines/25xaitH6e1Ems2QTDpYw")
         docRef.getDocument { (globalIssuesInContextDocSnapshot, error) in
-            guard let globalIssuesInContextDocSnapshot = globalIssuesInContextDocSnapshot, globalIssuesInContextDocSnapshot.exists else { return }
+            guard let globalIssuesInContextDocSnapshot = globalIssuesInContextDocSnapshot, globalIssuesInContextDocSnapshot.exists else {
+                self.globalIssuesInContextButton.isEnabled = false
+                self.globalIssuesInContextButton.isHidden = true
+                return }
             let data = globalIssuesInContextDocSnapshot.data()
             let globalIssuesInContextName = data["Name"] as? String ?? ""
             let globalIssuesInContextLink = data["Link"] as? String ?? ""
@@ -52,7 +55,10 @@ class databaseViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Database Magazines/5Djg4gQgr9XYWCtMPC5f")
         docRef.getDocument { (cQResearcherDocSnapshot, error) in
-            guard let cQResearcherDocSnapshot = cQResearcherDocSnapshot, cQResearcherDocSnapshot.exists else { return }
+            guard let cQResearcherDocSnapshot = cQResearcherDocSnapshot, cQResearcherDocSnapshot.exists else {
+                self.cQResearcherButton.isEnabled = false
+                self.cQResearcherButton.isHidden = true
+                return }
             let data = cQResearcherDocSnapshot.data()
             let cQResearcherName = data["Name"] as? String ?? ""
             let cQResearcherLink = data["Link"] as? String ?? ""
@@ -62,7 +68,10 @@ class databaseViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Database Magazines/EtXxmNBTGRitap68dMRJ")
         docRef.getDocument { (consumerResourcesDocSnapshot, error) in
-            guard let consumerResourcesDocSnapshot = consumerResourcesDocSnapshot, consumerResourcesDocSnapshot.exists else { return }
+            guard let consumerResourcesDocSnapshot = consumerResourcesDocSnapshot, consumerResourcesDocSnapshot.exists else {
+                self.consumerResourcesButton.isEnabled = false
+                self.consumerResourcesButton.isHidden = true
+                return }
             let data = consumerResourcesDocSnapshot.data()
             let consumerResourcesName = data["Name"] as? String ?? ""
             let consumerResourcesLink = data["Link"] as? String ?? ""
@@ -72,7 +81,10 @@ class databaseViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Database Magazines/HiYSe7o2Z3JRF8MA2CmJ")
         docRef.getDocument { (opposingViewpointsDocSnapshot, error) in
-            guard let opposingViewpointsDocSnapshot = opposingViewpointsDocSnapshot, opposingViewpointsDocSnapshot.exists else { return }
+            guard let opposingViewpointsDocSnapshot = opposingViewpointsDocSnapshot, opposingViewpointsDocSnapshot.exists else {
+                self.opposingViewpointsButton.isEnabled = false
+                self.opposingViewpointsButton.isHidden = true
+                return }
             let data = opposingViewpointsDocSnapshot.data()
             let opposingViewpointsName = data["Name"] as? String ?? ""
             let opposingViewpointsLink = data["Link"] as? String ?? ""
@@ -81,7 +93,10 @@ class databaseViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Database Magazines/LJZf1pibVEbRPYc5VFpr")
         docRef.getDocument { (studentResourcesDocSnapshot, error) in
-            guard let studentResourcesDocSnapshot = studentResourcesDocSnapshot, studentResourcesDocSnapshot.exists else { return }
+            guard let studentResourcesDocSnapshot = studentResourcesDocSnapshot, studentResourcesDocSnapshot.exists else {
+                self.studentResourcesButton.isEnabled = false
+                self.studentResourcesButton.isHidden = true
+                return }
             let data = studentResourcesDocSnapshot.data()
             let studentResourcesName = data["Name"] as? String ?? ""
             let studentResourcesLink = data["Link"] as? String ?? ""
@@ -90,7 +105,10 @@ class databaseViewController: UIViewController {
         }
     docRef = Firestore.firestore().document("/Database Magazines/LtQJGteo4udXn1MY5Pf8")
     docRef.getDocument { (infotracDocSnapshot, error) in
-    guard let infotracDocSnapshot = infotracDocSnapshot, infotracDocSnapshot.exists else { return }
+    guard let infotracDocSnapshot = infotracDocSnapshot, infotracDocSnapshot.exists else {
+        self.infotracDocButton.isEnabled = false
+        self.infotracDocButton.isHidden = true
+        return }
     let data = infotracDocSnapshot.data()
     let infotracName = data["Name"] as? String ?? ""
     let infotracLink = data["Link"] as? String ?? ""
@@ -99,7 +117,10 @@ class databaseViewController: UIViewController {
     }
         docRef = Firestore.firestore().document("/Database Magazines/Ot3s5BgNhSICbaejRE0C")
         docRef.getDocument { (wilsonOmnimfileDocSnapshot, error) in
-            guard let wilsonOmnimfileDocSnapshot = wilsonOmnimfileDocSnapshot, wilsonOmnimfileDocSnapshot.exists else { return }
+            guard let wilsonOmnimfileDocSnapshot = wilsonOmnimfileDocSnapshot, wilsonOmnimfileDocSnapshot.exists else {
+                self.wilsonOmnimfileButton.isEnabled = false
+                self.wilsonOmnimfileButton.isHidden = true
+                return }
             let data = wilsonOmnimfileDocSnapshot.data()
             let wilsonOmnimfileName = data["Name"] as? String ?? ""
             let wilsonOmnimfileLink = data["Link"] as? String ?? ""
@@ -108,7 +129,10 @@ class databaseViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Database Magazines/PVH6MXJU5uD34qrCV0ho")
         docRef.getDocument { (tOPICSearchDocSnapshot, error) in
-            guard let tOPICSearchDocSnapshot = tOPICSearchDocSnapshot, tOPICSearchDocSnapshot.exists else { return }
+            guard let tOPICSearchDocSnapshot = tOPICSearchDocSnapshot, tOPICSearchDocSnapshot.exists else {
+                self.tOPICSearchButton.isEnabled = false
+                self.tOPICSearchButton.isHidden = true
+                return }
             let data = tOPICSearchDocSnapshot.data()
             let tOPICSearchName = data["Name"] as? String ?? ""
             let tOPICSearchLink = data["Link"] as? String ?? ""
@@ -117,7 +141,10 @@ class databaseViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Database Magazines/TKlyN7GgqQr6VSlZ2v21")
         docRef.getDocument { (sIRSDocSnapshot, error) in
-            guard let sIRSDocSnapshot = sIRSDocSnapshot, sIRSDocSnapshot.exists else { return }
+            guard let sIRSDocSnapshot = sIRSDocSnapshot, sIRSDocSnapshot.exists else {
+                self.sIRSButton.isEnabled = false
+                self.sIRSButton.isHidden = true
+                return }
             let data = sIRSDocSnapshot.data()
             let sIRSName = data["Name"] as? String ?? ""
             let sIRSLink = data["Link"] as? String ?? ""
@@ -126,7 +153,10 @@ class databaseViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Database Magazines/TuRfX3nBSYnIxEa0TxpH")
         docRef.getDocument { (firstSearchDocSnapshot, error) in
-            guard let firstSearchDocSnapshot = firstSearchDocSnapshot, firstSearchDocSnapshot.exists else { return }
+            guard let firstSearchDocSnapshot = firstSearchDocSnapshot, firstSearchDocSnapshot.exists else {
+                self.firstSearchButton.isEnabled = false
+                self.firstSearchButton.isHidden = true
+                return }
             let data = firstSearchDocSnapshot.data()
             let firstSearchName = data["Name"] as? String ?? ""
             let firstSearchLink = data["Link"] as? String ?? ""
@@ -135,7 +165,10 @@ class databaseViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Database Magazines/hbBKwpQsnqLHzl85lkVn")
         docRef.getDocument { (mASUltraDocSnapshot, error) in
-            guard let mASUltraDocSnapshot = mASUltraDocSnapshot, mASUltraDocSnapshot.exists else { return }
+            guard let mASUltraDocSnapshot = mASUltraDocSnapshot, mASUltraDocSnapshot.exists else {
+                self.mASUltraButton.isEnabled = false
+                self.mASUltraButton.isHidden = true
+                return }
             let data = mASUltraDocSnapshot.data()
             let mASUltraName = data["Name"] as? String ?? ""
             let mASUltraLink = data["Link"] as? String ?? ""
@@ -144,7 +177,10 @@ class databaseViewController: UIViewController {
         }
         docRef = Firestore.firestore().document("/Database Magazines/z1ImAc0iAdIufD4WQQ3R")
         docRef.getDocument { (eBSCODocSnapshot, error) in
-            guard let eBSCODocSnapshot = eBSCODocSnapshot, eBSCODocSnapshot.exists else { return }
+            guard let eBSCODocSnapshot = eBSCODocSnapshot, eBSCODocSnapshot.exists else {
+                self.eBSCOButton.isEnabled = false
+                self.eBSCOButton.isHidden = true
+                return }
             let data = eBSCODocSnapshot.data()
             let eBSCOName = data["Name"] as? String ?? ""
             let eBSCOLink = data["Link"] as? String ?? ""
