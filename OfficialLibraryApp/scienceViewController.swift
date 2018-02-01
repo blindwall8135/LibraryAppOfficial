@@ -11,6 +11,12 @@ import Firebase
 class scienceViewController: UIViewController {
 
     var docRef : DocumentReference!
+    @IBOutlet weak var EndangeredSpeciesofNorthAmericaButton: UIButton!
+    @IBOutlet weak var GrzimeksAnimalLifeEncyclopediaButton: UIButton!
+    @IBOutlet weak var HealthSourceConsumerButton: UIButton!
+    @IBOutlet weak var ScienceinContextButton: UIButton!
+    @IBOutlet weak var TeenHealthandWellnessButton: UIButton!
+    @IBOutlet weak var DrugsAlcoholandAddictiveBehaviorButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -76,4 +82,17 @@ class scienceViewController: UIViewController {
             print(DrugsAlcoholandAddictiveBehaviorLink)
         }
 }
+    @IBAction func EndangeredSpeciesofNorthAmericaPressed(_ sender: Any) {
+    }
+
+    @IBAction func GrzimeksAnimalLifeEncyclopediaPressed(_ sender: Any) {
+    }
+    @IBAction func HealthSourceConsumerPressed(_ sender: Any) {
+    }
+    @IBAction func ScienceinContextPressed(_ sender: Any) {
+    }
+    @IBAction func TeenHealthandWellnessPressed(_ sender: Any) {
+    }
+    @IBAction func DrugsAlcoholandAddictiveBehaviorPressed(_ sender: Any) {
+    }
 }
