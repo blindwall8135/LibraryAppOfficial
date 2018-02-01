@@ -8,11 +8,16 @@
 
 import UIKit
 import Firebase
-
+import SafariServices
 class writingViewController: UIViewController {
         
         var docRef : DocumentReference!
-        override func viewDidLoad() {
+    
+    @IBOutlet weak var thesisStatementsButton: UIButton!
+    @IBOutlet weak var OWLPerdueDocButton: UIButton!
+    @IBOutlet weak var easyBibButton: UIButton!
+    @IBOutlet weak var MELConWritingButton: UIButton!
+    override func viewDidLoad() {
             super.viewDidLoad()
             
             //Writing
@@ -62,5 +67,13 @@ class writingViewController: UIViewController {
 }
     
 }
+    @IBAction func thesisStatementsPressed(_ sender: Any) {
+    }
     
+    @IBAction func OWLPerduePressed(_ sender: Any) {
+    }
+    @IBAction func easyBibPressed(_ sender: Any) {
+    }
+    @IBAction func MELConWritingPressed(_ sender: Any) {
+    }
 }
