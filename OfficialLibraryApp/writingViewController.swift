@@ -27,7 +27,10 @@ class writingViewController: UIViewController {
             //Writing
             docRef = Firestore.firestore().document("/Writing/d8YgNrUA6GhQQrH1cprL")
             docRef.getDocument { (thesisStatementsDocSnapshot, error) in
-                guard let thesisStatementsDocSnapshot = thesisStatementsDocSnapshot, thesisStatementsDocSnapshot.exists else { return }
+                guard let thesisStatementsDocSnapshot = thesisStatementsDocSnapshot, thesisStatementsDocSnapshot.exists else {
+                    self.thesisStatementsButton.isEnabled = false
+                    self.thesisStatementsButton.isHidden = true
+                    return }
                 let data = thesisStatementsDocSnapshot.data()
                 let thesisStatementsName = data["Name"] as? String ?? ""
                 let thesisStatementsLink = data["Link"] as? String ?? ""
@@ -37,7 +40,10 @@ class writingViewController: UIViewController {
             
                 docRef = Firestore.firestore().document("/Writing/rp4mmxKp5yuutuDm6gKs")
                 docRef.getDocument { (OWLPerdueDocSnapshot, error) in
-                    guard let OWLPerdueDocSnapshot = OWLPerdueDocSnapshot, OWLPerdueDocSnapshot.exists else { return }
+                    guard let OWLPerdueDocSnapshot = OWLPerdueDocSnapshot, OWLPerdueDocSnapshot.exists else {
+                        self.OWLPerdueDocButton.isEnabled = false
+                        self.OWLPerdueDocButton.isHidden = true
+                        return }
                     let data = OWLPerdueDocSnapshot.data()
                     let OWLPerdueName = data["Name"] as? String ?? ""
                     let OWLPerdueLink = data["Link"] as? String ?? ""
@@ -47,27 +53,27 @@ class writingViewController: UIViewController {
             
             docRef = Firestore.firestore().document("/Writing/vGY7I86syK7y4ComXDi0")
             docRef.getDocument { (easyBibDocSnapshot, error) in
-                guard let easyBibDocSnapshot = easyBibDocSnapshot, easyBibDocSnapshot.exists else { return }
+                guard let easyBibDocSnapshot = easyBibDocSnapshot, easyBibDocSnapshot.exists else {
+                    self.easyBibButton.isEnabled = false
+                    self.easyBibButton.isHidden = true
+                    return }
                 let data = easyBibDocSnapshot.data()
                 let easyBibName = data["Name"] as? String ?? ""
                 let easyBibLink = data["Link"] as? String ?? ""
                 self.easyBibButton.setTitle(easyBibName, for: .normal)
                 self.link3 = easyBibLink
-
-            
     }
             docRef = Firestore.firestore().document("/Writing/y9adQ5tqJqTWhVch5UGy")
             docRef.getDocument { (MELConWritingDocSnapshot, error) in
-                guard let MELConWritingDocSnapshot = MELConWritingDocSnapshot, MELConWritingDocSnapshot.exists else { return }
+                guard let MELConWritingDocSnapshot = MELConWritingDocSnapshot, MELConWritingDocSnapshot.exists else {
+                    self.MELConWritingButton.isEnabled = false
+                    self.MELConWritingButton.isHidden = true
+                    return }
                 let data = MELConWritingDocSnapshot.data()
                 let MELConWritingName = data["Name"] as? String ?? ""
                 let MELConWritingLink = data["Link"] as? String ?? ""
                 self.MELConWritingButton.setTitle(MELConWritingName, for: .normal)
                 self.link4 = MELConWritingLink
-            
-    
-
-
 }
     
 }

@@ -36,7 +36,10 @@ class eBooksViewController: UIViewController {
             //E-Book
             docRef = Firestore.firestore().document("/E-Book/XWFGC4GplLPmzpkPGLVH")
             docRef.getDocument { (AmericansatWarDocSnapshot, error) in
-                guard let AmericansatWarDocSnapshot = AmericansatWarDocSnapshot, AmericansatWarDocSnapshot.exists else { return }
+                guard let AmericansatWarDocSnapshot = AmericansatWarDocSnapshot, AmericansatWarDocSnapshot.exists else {
+                    self.AmericansatWarDocButton.isEnabled = false
+                    self.AmericansatWarDocButton.isHidden = true
+                    return }
                 let data = AmericansatWarDocSnapshot.data()
                 let AmericansatWarName = data["Name"] as? String ?? ""
                 let AmericansatWarLink = data["Link"] as? String ?? ""
@@ -46,7 +49,10 @@ class eBooksViewController: UIViewController {
             }
             docRef = Firestore.firestore().document("/E-Book/aEagJW7b9NcaLECI5icl")
             docRef.getDocument { (CostumesandCultureDocSnapshot, error) in
-                guard let CostumesandCultureDocSnapshot = CostumesandCultureDocSnapshot, CostumesandCultureDocSnapshot.exists else { return }
+                guard let CostumesandCultureDocSnapshot = CostumesandCultureDocSnapshot, CostumesandCultureDocSnapshot.exists else {
+                    self.CostumesandCultureButton.isEnabled = false
+                    self.CostumesandCultureButton.isHidden = true
+                    return }
                 let data = CostumesandCultureDocSnapshot.data()
                 let CostumesandCultureName = data["Name"] as? String ?? ""
                 let CostumesandCultureLink = data["Link"] as? String ?? ""
@@ -55,7 +61,10 @@ class eBooksViewController: UIViewController {
             }
             docRef = Firestore.firestore().document("/E-Book/aG2xF2kAFdfUzyDDMAYR")
             docRef.getDocument { (GenocideandCrimesAgainstHumanityDocSnapshot, error) in
-                guard let GenocideandCrimesAgainstHumanityDocSnapshot = GenocideandCrimesAgainstHumanityDocSnapshot, GenocideandCrimesAgainstHumanityDocSnapshot.exists else { return }
+                guard let GenocideandCrimesAgainstHumanityDocSnapshot = GenocideandCrimesAgainstHumanityDocSnapshot, GenocideandCrimesAgainstHumanityDocSnapshot.exists else {
+                    self.GenocideandCrimesAgainstHumanityButton.isEnabled = false
+                    self.GenocideandCrimesAgainstHumanityButton.isHidden = true
+                    return }
                 let data = GenocideandCrimesAgainstHumanityDocSnapshot.data()
                 let GenocideandCrimesAgainstHumanityName = data["Name"] as? String ?? ""
                 let GenocideandCrimesAgainstHumanityLink = data["Link"] as? String ?? ""
@@ -64,7 +73,10 @@ class eBooksViewController: UIViewController {
             }
             docRef = Firestore.firestore().document("/E-Book/hboZZX5x6QvR6EL9f5yU")
             docRef.getDocument { (BellBottomsDocSnapshot, error) in
-                guard let BellBottomsDocSnapshot = BellBottomsDocSnapshot, BellBottomsDocSnapshot.exists else { return }
+                guard let BellBottomsDocSnapshot = BellBottomsDocSnapshot, BellBottomsDocSnapshot.exists else {
+                    self.BellBottomsButton.isEnabled = false
+                    self.BellBottomsButton.isHidden = true
+                    return }
                 let data = BellBottomsDocSnapshot.data()
                 let BellBottomsName = data["Name"] as? String ?? ""
                 let BellBottomsLink = data["Link"] as? String ?? ""
@@ -73,7 +85,10 @@ class eBooksViewController: UIViewController {
             }
             docRef = Firestore.firestore().document("/E-Book/r3Eymfv2P4Eja7HCoWWB")
             docRef.getDocument { (AmericanDecadesDocSnapshot, error) in
-                guard let AmericanDecadesDocSnapshot = AmericanDecadesDocSnapshot, AmericanDecadesDocSnapshot.exists else { return }
+                guard let AmericanDecadesDocSnapshot = AmericanDecadesDocSnapshot, AmericanDecadesDocSnapshot.exists else {
+                    self.AmericanDecadesButton.isEnabled = false
+                    self.AmericanDecadesButton.isHidden = true
+                    return }
                 let data = AmericanDecadesDocSnapshot.data()
                 let AmericanDecadesName = data["Name"] as? String ?? ""
                 let AmericanDecadesLink = data["Link"] as? String ?? ""
@@ -82,7 +97,10 @@ class eBooksViewController: UIViewController {
             }
             docRef = Firestore.firestore().document("/E-Book/x9sKSUQwf7DXx5FX9OEf")
             docRef.getDocument { (CitiesofTheWorldDocSnapshot, error) in
-                guard let CitiesofTheWorldDocSnapshot = CitiesofTheWorldDocSnapshot, CitiesofTheWorldDocSnapshot.exists else { return }
+                guard let CitiesofTheWorldDocSnapshot = CitiesofTheWorldDocSnapshot, CitiesofTheWorldDocSnapshot.exists else {
+                    self.CitiesofTheWorldButton.isEnabled = false
+                    self.CitiesofTheWorldButton.isHidden = true
+                    return }
                 let data = CitiesofTheWorldDocSnapshot.data()
                 let CitiesofTheWorldName = data["Name"] as? String ?? ""
                 let CitiesofTheWorldLink = data["Link"] as? String ?? ""
@@ -91,7 +109,10 @@ class eBooksViewController: UIViewController {
             }
             docRef = Firestore.firestore().document("/E-Book/ydddtZ34liiFmXTtLaGN")
             docRef.getDocument { (EarlyCivilizationsintheAmericasDocSnapshot, error) in
-                guard let EarlyCivilizationsintheAmericasDocSnapshot = EarlyCivilizationsintheAmericasDocSnapshot, EarlyCivilizationsintheAmericasDocSnapshot.exists else { return }
+                guard let EarlyCivilizationsintheAmericasDocSnapshot = EarlyCivilizationsintheAmericasDocSnapshot, EarlyCivilizationsintheAmericasDocSnapshot.exists else {
+                    self.EarlyCivilizationsintheAmericasButton.isEnabled = false
+                    self.EarlyCivilizationsintheAmericasButton.isHidden = true
+                    return }
                 let data = EarlyCivilizationsintheAmericasDocSnapshot.data()
                 let EarlyCivilizationsintheAmericasName = data["Name"] as? String ?? ""
                 let EarlyCivilizationsintheAmericasLink = data["Link"] as? String ?? ""
@@ -100,7 +121,10 @@ class eBooksViewController: UIViewController {
             }
             docRef = Firestore.firestore().document("/E-Book/zDZFkROi3BhEvpKVVHGo")
             docRef.getDocument { (StJamesEncyclopediaofPopCultureDocSnapshot, error) in
-                guard let StJamesEncyclopediaofPopCultureDocSnapshot = StJamesEncyclopediaofPopCultureDocSnapshot, StJamesEncyclopediaofPopCultureDocSnapshot.exists else { return }
+                guard let StJamesEncyclopediaofPopCultureDocSnapshot = StJamesEncyclopediaofPopCultureDocSnapshot, StJamesEncyclopediaofPopCultureDocSnapshot.exists else {
+                    self.StJamesEncyclopediaofPopCultureButton.isEnabled = false
+                    self.StJamesEncyclopediaofPopCultureButton.isHidden = true
+                    return }
                 let data = StJamesEncyclopediaofPopCultureDocSnapshot.data()
                 let StJamesEncyclopediaofPopCultureName = data["Name"] as? String ?? ""
                 let StJamesEncyclopediaofPopCultureLink = data["Link"] as? String ?? ""
