@@ -34,7 +34,10 @@ class galeViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/Gale/0nJvAJYEO5brS3PWmdE8")
         docRef.getDocument { (ScienceinContextDocSnapshot, error) in
-            guard let ScienceinContextDocSnapshot = ScienceinContextDocSnapshot, ScienceinContextDocSnapshot.exists else { return }
+            guard let ScienceinContextDocSnapshot = ScienceinContextDocSnapshot, ScienceinContextDocSnapshot.exists else {
+                self.ScienceinContextButton.isEnabled = false
+                self.ScienceinContextButton.isHidden = true
+                return }
             let data = ScienceinContextDocSnapshot.data()
             let ScienceinContextName = data["Name"] as? String ?? ""
             let ScienceinContextLink = data["Link"] as? String ?? ""
@@ -45,7 +48,10 @@ class galeViewController: UIViewController {
 
         docRef = Firestore.firestore().document("/Gale/57YGAmuHLSKFLfrHC29v")
         docRef.getDocument { (OpposingViewpointsinContextDocSnapshot, error) in
-            guard let OpposingViewpointsinContextDocSnapshot = OpposingViewpointsinContextDocSnapshot, OpposingViewpointsinContextDocSnapshot.exists else { return }
+            guard let OpposingViewpointsinContextDocSnapshot = OpposingViewpointsinContextDocSnapshot, OpposingViewpointsinContextDocSnapshot.exists else {
+                self.OpposingViewpointsinContextButton.isEnabled = false
+                self.OpposingViewpointsinContextButton.isHidden = true
+                return }
             let data = OpposingViewpointsinContextDocSnapshot.data()
             let OpposingViewpointsinContextName = data["Name"] as? String ?? ""
             let OpposingViewpointsinContextLink = data["Link"] as? String ?? ""
@@ -55,7 +61,10 @@ class galeViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/Gale/71QtBku0QGFIFajMi5qm")
         docRef.getDocument { (GALEPowerSearchDocSnapshot, error) in
-            guard let GALEPowerSearchDocSnapshot = GALEPowerSearchDocSnapshot, GALEPowerSearchDocSnapshot.exists else { return }
+            guard let GALEPowerSearchDocSnapshot = GALEPowerSearchDocSnapshot, GALEPowerSearchDocSnapshot.exists else {
+                self.GALEPowerSearchButton.isEnabled = false
+                self.GALEPowerSearchButton.isHidden = true
+                return }
             let data = GALEPowerSearchDocSnapshot.data()
             let GALEPowerSearchName = data["Name"] as? String ?? ""
             let GALEPowerSearchLink = data["Link"] as? String ?? ""
@@ -65,7 +74,10 @@ class galeViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/Gale/Nd16oqynh071MJHNWBoT")
         docRef.getDocument { (GlobalIssuesinContextDocSnapshot, error) in
-            guard let GlobalIssuesinContextDocSnapshot = GlobalIssuesinContextDocSnapshot, GlobalIssuesinContextDocSnapshot.exists else { return }
+            guard let GlobalIssuesinContextDocSnapshot = GlobalIssuesinContextDocSnapshot, GlobalIssuesinContextDocSnapshot.exists else {
+                self.GlobalIssuesinContextButton.isEnabled = false
+                self.GlobalIssuesinContextButton.isHidden = true
+                return }
             let data = GlobalIssuesinContextDocSnapshot.data()
             let GlobalIssuesinContextName = data["Name"] as? String ?? ""
             let GlobalIssuesinContextLink = data["Link"] as? String ?? ""
@@ -75,7 +87,10 @@ class galeViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/Gale/cJOmY3Vklp9pBzKy5Ui0")
         docRef.getDocument { (GaleVirtualReferenceDocSnapshot, error) in
-            guard let GaleVirtualReferenceDocSnapshot = GaleVirtualReferenceDocSnapshot, GaleVirtualReferenceDocSnapshot.exists else { return }
+            guard let GaleVirtualReferenceDocSnapshot = GaleVirtualReferenceDocSnapshot, GaleVirtualReferenceDocSnapshot.exists else {
+                self.GaleVirtualReferenceButton.isEnabled = false
+                self.GaleVirtualReferenceButton.isHidden = true
+                return }
             let data = GaleVirtualReferenceDocSnapshot.data()
             let GaleVirtualReferenceName = data["Name"] as? String ?? ""
             let GaleVirtualReferenceLink = data["Link"] as? String ?? ""
@@ -85,7 +100,10 @@ class galeViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/Gale/qOIFsAByo8qzmxE6RhLS")
         docRef.getDocument { (LitFinderDocSnapshot, error) in
-            guard let LitFinderDocSnapshot = LitFinderDocSnapshot, LitFinderDocSnapshot.exists else { return }
+            guard let LitFinderDocSnapshot = LitFinderDocSnapshot, LitFinderDocSnapshot.exists else {
+                self.LitFinderButton.isEnabled = false
+                self.LitFinderButton.isHidden = true
+                return }
             let data = LitFinderDocSnapshot.data()
             let LitFinderName = data["Name"] as? String ?? ""
             let LitFinderLink = data["Link"] as? String ?? ""
@@ -95,7 +113,10 @@ class galeViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/Gale/yguupcCU5fOpMJGMZStZ")
         docRef.getDocument { (StudentResourceinContextDocSnapshot, error) in
-            guard let StudentResourceinContextDocSnapshot = StudentResourceinContextDocSnapshot, StudentResourceinContextDocSnapshot.exists else { return }
+            guard let StudentResourceinContextDocSnapshot = StudentResourceinContextDocSnapshot, StudentResourceinContextDocSnapshot.exists else {
+                self.StudentResourceinContextButton.isEnabled = false
+                self.StudentResourceinContextButton.isHidden = true
+                return }
             let data = StudentResourceinContextDocSnapshot.data()
             let StudentResourceinContextName = data["Name"] as? String ?? ""
             let StudentResourceinContextLink = data["Link"] as? String ?? ""
@@ -105,7 +126,10 @@ class galeViewController: UIViewController {
         
         docRef = Firestore.firestore().document("/Gale/yxUWyaXu0Z5uAxCsLCGw")
         docRef.getDocument { (BiographyinContextDocSnapshot, error) in
-            guard let BiographyinContextDocSnapshot = BiographyinContextDocSnapshot, BiographyinContextDocSnapshot.exists else { return }
+            guard let BiographyinContextDocSnapshot = BiographyinContextDocSnapshot, BiographyinContextDocSnapshot.exists else {
+                self.BiographyinContextButton.isEnabled = false
+                self.BiographyinContextButton.isHidden = true
+                return }
             let data = BiographyinContextDocSnapshot.data()
             let BiographyinContextName = data["Name"] as? String ?? ""
             let BiographyinContextLink = data["Link"] as? String ?? ""
